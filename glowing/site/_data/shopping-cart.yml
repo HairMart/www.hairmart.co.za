@@ -1,0 +1,22 @@
+products:
+  - image: /images/product-07.jpg
+    title: Natural Coconut Cleansing Oil
+    price: $29.00
+    sale: $39.00
+    total: $48.00
+  - image: /images/product-10.jpg
+    title: Super Pure
+    price: $29.00
+    sale: $39.00
+    total: $22.00
+  - image: /images/product-04.jpg
+    title: Cleansing Balm
+    price: $29.00
+    sale: $39.00
+    total: $48.00
+    is_out_stock: true
+  - image: /images/product-05.jpg
+    title: Cleansing Balm
+    price: $29.00
+    sale: $39.00
+    total: $29.00

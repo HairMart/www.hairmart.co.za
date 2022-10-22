@@ -1,0 +1,81 @@
+products:
+  - image: /images/product-01.jpg
+    title: Facial cleanser
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: true
+  - image: /images/product-02.jpg
+    title: Bio-shroom Rejuvenating Serum
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: true
+  - image: /images/product-03.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: new
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: true
+  - image: /images/product-04.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: true
+  - image: /images/product-10.jpg
+    title: Facial cleanser
+    price: $29.00
+    label: sale
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: false
+  - image: /images/product-18.jpg
+    title: Bio-shroom Rejuvenating Serum
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: false
+  - image: /images/product-05.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: false
+  - image: /images/product-12.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: true
+  - image: /images/product-13.jpg
+    title: Facial cleanser
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: true
+  - image: /images/product-15.jpg
+    title: Bio-shroom Rejuvenating Serum
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: true
+  - image: /images/product-19.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: sale
+    reviews: 2947
+    url: /product-page-01.html
+    is_columns_4: true

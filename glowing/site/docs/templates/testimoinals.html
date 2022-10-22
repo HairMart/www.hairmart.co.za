@@ -1,0 +1,71 @@
+---
+layout: docs
+title: Testimonials
+description: Customer testimonials.
+group: templates
+toc: true
+---
+<h2>Testimonial 01</h2>
+
+{% capture example %}
+<div style="max-width: 380px;">
+	<div class="card border-0">
+		<div class="card-body px-3 py-0 text-center">
+			<img src="{{ '/images/testimonial-03.png' | document_url }}" alt="testimonial-03" class="mb-3">
+			<p class="card-text fs-20 font-weight-600 text-secondary">
+				“Also the customer service is phenomenal. I would purchase again.“
+			</p>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Testimonial 02</h2>
+
+{% capture example %}`
+<div style="max-width: 480px;">
+	<div class="card border-0 p-sm-7 p-6 bg-gray rounded">
+		<div class="card-body px-3 py-0">
+			<ul class="list-inline mb-4">
+				<li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i></li>
+				<li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i></li>
+				<li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i></li>
+				<li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i></li>
+				<li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i></li>
+			</ul>
+			<p class="card-text mb-7 fs-20 font-weight-600 text-primary">
+				“Great tags, Millie has got used to it, nothing like the old tin tags of years gone by. Light weight and great colours available.“
+			</p>
+			<div class="media align-items-center">
+				<img src="{{ '/images/testimonials-06.png' | document_url }}" alt="testimonial-03" class="mr-4">
+				<div class="media-body">
+					<h4 class="text-secondary fs-15 font-weight-bold text-uppercase mb-1 letter-spacing-01">Jennifer C</h4>
+					<p class="card-text">/ Orlando, FL</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Testimonial 03</h2>
+
+{% capture example %}`
+<div style="max-width: 700px;">
+	<div class="card border-0 text-center">
+		<div class="card-body px-3 py-0">
+			<img src="{{ '/images/testimonial-12.png' | document_url }}" alt="testimonial-12" class="mb-7">
+			<p class="card-text mb-8 fs-34 font-weight-500 text-primary lh-13">
+				“Amazing product. The results are so transformative in texture and my face feels plump and healthy.“
+			</p>
+			<h4 class="fs-15 font-weight-bold text-uppercase letter-spacing-01">Kathleen C.</h4>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+
+

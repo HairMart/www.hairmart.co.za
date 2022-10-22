@@ -1,0 +1,71 @@
+feature-products:
+  - image: /images/product-01.jpg
+    title: Facial cleanser
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-02.jpg
+    title: Bio-shroom Rejuvenating Serum
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-06.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-03.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: new
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-07.jpg
+    title: Facial cleanser
+    price: $29.00
+    sale: $39.00
+    label: -20%
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-08.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: New
+    reviews: 2947
+    url: /product-detail-01.html
+
+
+image-box:
+  - image: /images/image-box-18.jpg
+    title: Guaranteed PURE
+    description: All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+
+  - image: /images/image-box-19.jpg
+    title: Completely Cruelty-Free
+    description: All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+
+  - image: /images/image-box-20.jpg
+    title: Ingredient Sourcing
+    description: All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+
+testimonial:
+  - image: /images/testimonial-12.png
+    name: Kathleen C.
+    description:  “Amazing product. The results are so transformative in texture and my face feels plump and healthy.“
+
+  - image: /images/testimonial-10.png
+    name: Kathleen C.
+    description:  “Amazing product. The results are so transformative in texture and my face feels plump and healthy.“
+
+  - image: /images/testimonial-11.png
+    name: Kathleen C.
+    description:  “Amazing product. The results are so transformative in texture and my face feels plump and healthy.“

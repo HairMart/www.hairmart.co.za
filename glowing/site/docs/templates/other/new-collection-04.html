@@ -1,0 +1,43 @@
+---
+layout: footer-docs
+title: "New Collection 04"
+category_text: Other
+category_url: /docs/templates/other.html
+---
+{% include components/page-title/docs.html %}
+<section>
+    <div class="container">
+        <div  class="bg-cover py-lg-14 py-13" style="background-image: url('{{ '/images/bg-other-01.jpg' | document_url }}')">
+            <div class="row">
+                <div class="col-md-5 offset-md-7 px-8 px-md-0">
+                    <p class="fs-15 letter-spacing-01 text-secondary mb-3 text-uppercase font-weight-600">new collection</p>
+                    <h1 class="mb-6 fs-34 lh-129" style="max-width: 310px">Get The Skin You Want To Feel</h1>
+                    <a href="{{ '/shop-page-04.html' | document_url }}"
+                       class="btn btn-white rounded text-secondary border-0 shadow-1 bg-hover-secondary hover-white">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-10">
+    <div class="container">
+        <div class="bg-gray-01 overflow-auto">
+            {% highlight html %}
+            <section>
+                <div class="container">
+                    <div  class="bg-cover py-lg-14 py-13" style="background-image: url('{{ '/images/bg-other-01.jpg' | document_url }}')">
+                        <div class="row">
+                            <div class="col-md-5 offset-md-7 px-8 px-md-0">
+                                <p class="fs-15 letter-spacing-01 text-secondary mb-3 text-uppercase font-weight-600">new collection</p>
+                                <h1 class="mb-6 fs-34 lh-129" style="max-width: 310px">Get The Skin You Want To Feel</h1>
+                                <a href="{{ '/shop-page-04.html' | document_url }}"
+                                   class="btn btn-white rounded text-secondary border-0 shadow-1 bg-hover-secondary hover-white">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endhighlight %}
+        </div>
+    </div>
+</section>

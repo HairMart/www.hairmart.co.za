@@ -1,0 +1,241 @@
+---
+layout: home-6
+title: "Home 06"
+category_text: "Home"
+category_url: /home-06.html
+---
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-6 mb-md-0" data-animate="fadeInUp">
+                <div class="card border-0 text-center hover-shine hover-zoom-in">
+                    <img src="{{ '/images/banner-20.jpg' | document_url }}" alt="Autumn Skincare" class="card-img">
+                    <div class="card-img-overlay d-inline-flex flex-column px-6 py-7 justify-content-end bg-overlay-gradient-01">
+                        <h3 class="card-title fs-40 text-white mb-2">Sale 40% Off</h3>
+                        <div>
+                            <a href="{{ '/shop-page-04.html' | document_url }}"
+                               class="btn btn-link btn-light bg-transparent text-white hover-white border-0 p-0 fs-16 font-weight-600">
+                                Discover Now
+                                <svg class="icon icon-arrow-right">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-md-0" data-animate="fadeInUp">
+                <div class="card border-0 text-center hover-shine hover-zoom-in">
+                    <img src="{{ '/images/banner-19.jpg' | document_url }}" alt="Sale Up To 40% Off" class="card-img">
+                    <div class="card-img-overlay d-inline-flex flex-column px-6 py-7 justify-content-end bg-overlay-gradient-01">
+                        <h3 class="card-title fs-40 text-white mb-2">Sale Up To 40% Off</h3>
+                        <div>
+                            <a href="{{ '/shop-page-04.html' | document_url }}"
+                               class="btn btn-link btn-light bg-transparent text-white hover-white border-0 p-0 fs-16 font-weight-600">
+                                Discover Now
+                                <svg class="icon icon-arrow-right">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-7 pt-lg-9">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" data-animate="fadeInUp">
+                <div class="card bg-transparent border-0 text-center mb-6">
+                    <div class="w-63px card-img mb-2">
+                        <img src="{{ '/images/image-box-01.jpg' | document_url }}" alt="">
+                    </div>
+                    <div class="card-body px-0 pt-0">
+                        <h3 class="card-title fs-34 lh-129 mb-1 mx-auto" style="max-width: 610px">Because You Need Time
+                            for Yourself.
+                            Blend Beauty in You</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for product in site.data.home-06.products %}
+            <div class="col-lg-3 col-sm-6 mb-5" data-animate="fadeInUp">
+                <div class="card border-0 product">
+                    <div class="position-relative">
+                        <img src="{{ product.image | document_url }}" alt="{{ product.title }}">
+                        <div class="card-img-overlay d-flex p-3">
+                            <div>
+                                {%- assign label = product.label | slugify -%}
+                                {% if label == "sale" %}
+                                <span class="badge badge-primary">-20%</span>
+                                {% endif %}
+                                {% if label == "new" %}
+                                <span class="badge badge-warning">New</span>
+                                {% endif %}
+                            </div>
+                            <div class="my-auto w-100 content-change-vertical">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="View products"
+                                   class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+                                    <svg class="icon icon-shopping-bag-open-light fs-24">
+                                        <use xlink:href="#icon-shopping-bag-open-light"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Quick view"
+                                   class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
+									<span data-toggle="modal" data-target="#quick-view">
+										<svg class="icon icon-eye-light fs-24">
+											<use xlink:href="#icon-eye-light"></use>
+										</svg>
+									</span>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to wishlist"
+                                   class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+                                    <svg class="icon icon-star-light fs-24">
+                                        <use xlink:href="#icon-star-light"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"
+                                   class="add-to-compare ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle">
+                                    <svg class="icon icon-arrows-left-right-light fs-24">
+                                        <use xlink:href="#icon-arrows-left-right-light"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body px-0 pt-4 text-center">
+                        <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+                            {% if product.sale %}
+                            <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">{{ product.sale }}</span>
+                            {% endif %}
+                            <span>{{ product.price }}</span>
+                        </p>
+                        <h2 class="card-title fs-15 font-weight-500 mb-2"><a href="{{ product.url | document_url }}">{{ product.title
+                            }}</a>
+                        </h2>
+                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                            <ul class="list-inline mb-0 lh-1">
+                                <li class="list-inline-item fs-12 text-primary mr-0"><i class="fas fa-star"></i>
+                                </li>
+                                <li class="list-inline-item fs-12 text-primary mr-0"><i class="fas fa-star"></i>
+                                </li>
+                                <li class="list-inline-item fs-12 text-primary mr-0"><i class="fas fa-star"></i>
+                                </li>
+                                <li class="list-inline-item fs-12 text-primary mr-0"><i class="fas fa-star"></i>
+                                </li>
+                                <li class="list-inline-item fs-12 text-primary mr-0"><i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <span class="card-text fs-14 font-weight-400 pl-2 lh-1">{{ product.reviews }} reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-12 text-center mt-1" data-animate="fadeInUp">
+                <a href="{{ '/shop-page-01.html' | document_url }}"
+                   class=" btn btn-outline-secondary border border-2x">Shop All Products</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-lg-13 pt-11">
+    <div class="container" data-animate="fadeInUp">
+        <div  class="bg-cover py-lg-14 py-13" style="background-image: url('{{ '/images/bg-other-01.jpg' | document_url }}')">
+            <div class="row">
+                <div class="col-md-5 offset-md-7 px-8 px-md-0">
+                    <p class="fs-15 letter-spacing-01 text-secondary mb-3 text-uppercase font-weight-600">new collection</p>
+                    <h1 class="mb-6 fs-34 lh-129" style="max-width: 310px">Get The Skin You Want To Feel</h1>
+                    <a href="{{ '/shop-page-04.html' | document_url }}"
+                       class="btn btn-white rounded text-secondary border-0 shadow-1 bg-hover-secondary hover-white">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-10 pt-lg-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-6" data-animate="fadeInUp">
+                <h2 class="fs-34 mb-3">Featured Collection</h2>
+                <p class="fs-18">Our products are designed for everyone.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-6 mb-md-0" data-animate="fadeInUp">
+                <div class="card border-0 text-center hover-shine hover-zoom-in">
+                    <img src="{{ '/images/banner-25.jpg' | document_url }}" alt="Repair Serum" class="card-img">
+                    <div class="card-img-overlay d-inline-flex flex-column p-6 justify-content-end">
+                        <div>
+                            <a href="#"
+                               class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Repair Serum
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4  mb-6 mb-md-0" data-animate="fadeInUp">
+                <div class="card border-0 text-center hover-shine hover-zoom-in">
+                    <img src="{{ '/images/banner-23.jpg' | document_url }}" alt="Anti-aging Cream" class="card-img">
+                    <div class="card-img-overlay d-inline-flex flex-column p-6 justify-content-end">
+                        <div>
+                            <a href="#"
+                               class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Anti-aging Cream
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" data-animate="fadeInUp">
+                <div class="card border-0 text-center hover-shine hover-zoom-in">
+                    <img src="{{ '/images/banner-24.jpg' | document_url }}" alt="Repair Serum" class="card-img">
+                    <div class="card-img-overlay d-inline-flex flex-column p-6 justify-content-end">
+                        <div>
+                            <a href="#"
+                               class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Essenstial Items
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-10 pt-lg-12 pb-lg-13 pb-11">
+    <div class="container text-center mt-lg-1">
+        <div class="row">
+            <div class="col-lg-6" data-animate="fadeInUp">
+                <h3 class="mb-2 mx-auto fs-24 lh-15 mb-3">Follow Us on</h3>
+                <p class="mx-auto mb-6" style="max-width: 450px"> Shapes and proportions are for your intellect. I’ve treated the waistcoat as if it were a corset.</p>
+                <ul class="list-inline fs-20 mb-0">
+                    <li class="list-inline-item mr-4 mr-lg-8">
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                    <li class="list-inline-item mr-4 mr-lg-8">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item mr-4 mr-lg-8">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 border-lg-left mt-7 mt-lg-0" data-animate="fadeInUp">
+                <h3 class="mb-2 mx-auto fs-24 lh-15 mb-3">Let’s Stay in Touch</h3>
+                <p class="mx-auto mb-7">We’ll shout you $10 off your first order.</p>
+                <form class="mx-auto" style="max-width: 470px">
+                    <div class="input-group position-relative">
+                        <input type="email" class="form-control bg-transparent border-radius-right-0"
+                               placeholder="Enter your email address">
+                        <button type="submit" class="btn btn-secondary bg-hover-primary border-hover-primary border-radius-left-0">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

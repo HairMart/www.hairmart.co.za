@@ -1,0 +1,92 @@
+---
+layout: page-title-docs
+title: "Banner 08"
+category_text: Banner
+category_url: /docs/templates/banner.html
+---
+{% include components/page-title/docs.html %}
+<div class="py-11 pt-lg-12 pb-lg-10">
+    <div class="container container-xl">
+        <div class="row">
+            <div class="col-12 col-lg-6 mb-6 mb-lg-0">
+                <div class="card border-0 banner banner-01 hover-zoom-in hover-shine">
+                    <div class="card-img bg-img-cover-center"
+                         style="background-image: url('{{ '/images/banner-21.jpg' | document_url }}');"></div>
+                    <div class="card-img-overlay d-inline-flex flex-column p-6 px-md-8 py-md-7">
+                        <h6 class="card-subtitle mb-2 text-secondary letter-spacing-01">NEW COLLECTION</h6>
+                        <h3 class="card-title fs-34 lh-129" style="max-width: 240px">Mountain Pine Bath Oil</h3>
+                        <div class="mt-4">
+                            <a href="#"
+                               class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Explore
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="card border-0 banner banner-01 hover-zoom-in hover-shine">
+                    <div class="card-img bg-img-cover-center"
+                         style="background-image: url('{{ '/images/banner-22.jpg' | document_url }}');"></div>
+                    <div class="card-img-overlay d-inline-flex flex-column p-6 px-md-8 py-md-7">
+                        <h3 class="card-title fs-34 lh-129 mb-2">25% off Everything</h3>
+                        <p class="card-text text-secondary font-weight-500" style="max-width: 236px;">
+                            Makeup with extended range in colors for every human.
+                        </p>
+                        <div class="mt-2">
+                            <a href="#"
+                               class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Shop Sale</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="py-10">
+    <div class="container">
+        <div class="bg-gray-01 overflow-auto">
+            {% highlight html %}
+            <div class="py-11 pt-lg-12 pb-lg-10">
+                <div class="container container-xl">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-6 mb-lg-0">
+                            <div class="card border-0 banner banner-01 hover-zoom-in hover-shine">
+                                <div class="card-img bg-img-cover-center"
+                                     style="background-image: url('{{ '/images/banner-21.jpg' | document_url }}');"></div>
+                                <div class="card-img-overlay d-inline-flex flex-column p-6 px-md-8 py-md-7">
+                                    <h6 class="card-subtitle mb-2 text-secondary letter-spacing-01">NEW COLLECTION</h6>
+                                    <h3 class="card-title fs-34 lh-129" style="max-width: 240px">Mountain Pine Bath Oil</h3>
+                                    <div class="mt-4">
+                                        <a href="#"
+                                           class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Explore
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <div class="card border-0 banner banner-01 hover-zoom-in hover-shine">
+                                <div class="card-img bg-img-cover-center"
+                                     style="background-image: url('{{ '/images/banner-22.jpg' | document_url }}');"></div>
+                                <div class="card-img-overlay d-inline-flex flex-column p-6 px-md-8 py-md-7">
+                                    <h3 class="card-title fs-34 lh-129 mb-2">25% off Everything</h3>
+                                    <p class="card-text text-secondary font-weight-500" style="max-width: 236px;">
+                                        Makeup with extended range in colors for every human.
+                                    </p>
+                                    <div class="mt-2">
+                                        <a href="#"
+                                           class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Shop Sale</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endhighlight %}
+        </div>
+    </div>
+</section>

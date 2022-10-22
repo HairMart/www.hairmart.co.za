@@ -1,0 +1,335 @@
+---
+layout: home-7
+title: "Home 07"
+category_text: "Home"
+category_url: /home-07.html
+---
+<section class="mx-0 slick-slider slick-dots-light dots-inner-center slider"
+         data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":true,"arrows":false,"fade":true,"cssEase":"ease-in-out","speed":600}'>
+    <div class="box px-0">
+        <div class="bg-img-cover-center py-12 py-lg-17"
+             style="background-image: url('{{ '/images/bg-slider-14.jpg' | document_url }}');">
+            <div class="container container-xl py-6">
+                <div data-animate="fadeInDown">
+                    <div class="card pl-lg-1 mx-md-0 mx-auto" style="max-width: 450px">
+                        <div class="card-body pt-7 pb-8 px-7">
+                            <h1 class="card-title mb-4 fs-36 fs-md-48 lh-116 pr-lg-8">Love Your Skin Naturally</h1>
+                            <p class="card-text fs-18 lh-166 mb-5 pr-lg-7" style="max-width: 454px">Made using clean,
+                                non-toxic
+                                ingredients, our products are designed for everyone.</p>
+                            <a href="{{ '/shop-page-04.html' | document_url }}"
+                               class="btn btn-secondary rounded bg-hover-primary border-0 card-link">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box px-0">
+        <div class="bg-img-cover-center py-12 py-lg-17"
+             style="background-image: url('{{ '/images/bg-slider-15.jpg' | document_url }}');">
+            <div class="container container-xl py-6">
+                <div data-animate="fadeInDown">
+                    <div class="card pl-lg-1 mx-md-0 mx-auto" style="max-width: 450px">
+                        <div class="card-body pt-7 pb-8 px-7">
+                            <h1 class="card-title mb-4 fs-36 fs-md-48 lh-116 pr-lg-8">Our Autumn Skincare</h1>
+                            <p class="card-text fs-18 lh-166 mb-5 pr-lg-7" style="max-width: 454px">Made using clean,
+                                non-toxic ingredients, our products are designed for everyone.</p>
+                            <a href="{{ '/shop-page-04.html' | document_url }}"
+                               class="btn btn-secondary rounded bg-hover-primary border-0 card-link">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box px-0">
+        <div class="bg-img-cover-center py-12 py-lg-17"
+             style="background-image: url('{{ '/images/bg-slider-16.jpg' | document_url }}');">
+            <div class="container container-xl py-6">
+                <div data-animate="fadeInDown">
+                    <div class="card pl-lg-1 mx-md-0 mx-auto" style="max-width: 450px">
+                        <div class="card-body pt-7 pb-8 px-7">
+                            <h1 class="card-title mb-4 fs-36 fs-md-48 lh-116 pr-lg-6">Reveal The Beauty of Skin</h1>
+                            <p class="card-text fs-18 lh-166 mb-5 pr-lg-7" style="max-width: 454px">Made using clean,
+                                non-toxic ingredients, our products are designed for everyone.</p>
+                            <a href="{{ '/shop-page-04.html' | document_url }}"
+                               class="btn btn-secondary rounded bg-hover-primary border-0 card-link">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-lg-13 pt-11">
+    <div class="container container-xl">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-heading text-center mb-6" data-animate="fadeInUp">Feature Products</h2>
+                <ul class="nav nav-pills justify-content-center mb-lg-9 mb-7" role="tablist">
+                    {% for tab in site.data.home-07.tabs-id %}
+                    <li class="nav-item px-md-4 px-3" data-animate="fadeInUp">
+                        <a class="pointer nav-link {% if tab.is_active == true %}active{% endif %} text-body px-0 py-1 lh-1 fs-20 font-weight-600 bg-transparent rounded-0 text-active-secondary border-active-secondary border-bottom border-white"
+                           id="pills-{{ tab.name }}-tab" data-toggle="pill" href="#pills-{{ tab.name }}" role="tab"
+                           aria-controls="pills-{{ tab.name }}" aria-selected="true">{{ tab.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="tab-content p-0 shadow-none" id="pills-tabContent">
+                    {% for tab in site.data.home-07.tabs %}
+                    <div class="tab-pane fade {% if tab.is_active == true %}show active{% endif %}"
+                         id="pills-{{ tab.title }}"
+                         role="tabpanel" aria-labelledby="pills-{{ tab.title }}-tab">
+                        <div class="row">
+                            {% for product in tab.products %}
+                            <div class="col-lg-3 col-sm-6 mb-5" data-animate="fadeInUp">
+                                <div class="card border-0 product">
+                                    <div class="position-relative">
+                                        <img src="{{ product.image | document_url }}" alt="{{ product.title }}">
+                                        <div class="card-img-overlay d-flex p-3">
+                                            <div>
+                                                {%- assign label = product.label | slugify -%}
+                                                {% if label == "sale" %}
+                                                <span class="badge badge-primary">-20%</span>
+                                                {% endif %}
+                                                {% if label == "new" %}
+                                                <span class="badge badge-warning">New</span>
+                                                {% endif %}
+                                            </div>
+                                            <div class="my-auto w-100 content-change-vertical">
+                                                <a href="#" data-toggle="tooltip" data-placement="left"
+                                                   title="View products"
+                                                   class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+                                                    <svg class="icon icon-shopping-bag-open-light fs-24">
+                                                        <use xlink:href="#icon-shopping-bag-open-light"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Quick view"
+                                                   class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
+                                                    <span data-toggle="modal" data-target="#quick-view">
+                                                        <svg class="icon icon-eye-light fs-24">
+                                                            <use xlink:href="#icon-eye-light"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="left"
+                                                   title="Add to wishlist"
+                                                   class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+                                                    <svg class="icon icon-star-light fs-24">
+                                                        <use xlink:href="#icon-star-light"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"
+                                                   class="add-to-compare ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle">
+                                                    <svg class="icon icon-arrows-left-right-light fs-24">
+                                                        <use xlink:href="#icon-arrows-left-right-light"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body px-0 pt-4 text-center">
+                                        <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+                                            {% if product.sale %}
+                                            <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">{{ product.sale }}</span>
+                                            {% endif %}
+                                            <span>{{ product.price }}</span>
+                                        </p>
+                                        <h2 class="card-title fs-15 font-weight-500 mb-2"><a href="{{ product.url | document_url}}">{{
+                                            product.title
+                                            }}</a>
+                                        </h2>
+                                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                            <ul class="list-inline mb-0 lh-1">
+                                                <li class="list-inline-item fs-12 text-primary mr-0"><i
+                                                        class="fas fa-star"></i>
+                                                </li>
+                                                <li class="list-inline-item fs-12 text-primary mr-0"><i
+                                                        class="fas fa-star"></i>
+                                                </li>
+                                                <li class="list-inline-item fs-12 text-primary mr-0"><i
+                                                        class="fas fa-star"></i>
+                                                </li>
+                                                <li class="list-inline-item fs-12 text-primary mr-0"><i
+                                                        class="fas fa-star"></i>
+                                                </li>
+                                                <li class="list-inline-item fs-12 text-primary mr-0"><i
+                                                        class="fas fa-star"></i>
+                                                </li>
+                                            </ul>
+                                            <span class="card-text fs-14 font-weight-400 pl-2 lh-1">{{ product.reviews }} reviews</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-6 pt-lg-11">
+    <div class="container container-xl">
+        <div class="row">
+            <div class="col-lg-5 py-lg-16 mt-8 mt-lg-0 order-2 order-lg-1" data-animate="fadeInLeft">
+                <div class="py-lg-3">
+                    <div class="fs-15 font-weight-600 text-uppercase letter-spacing-01 pb-3 pb-lg-4 text-secondary">new
+                        collection
+                    </div>
+                    <h2 class="fs-40">Anti-aging Cream</h2>
+                    <p class="mb-0 fs-18 pt-1 text-body">Made using clean, non-toxic ingredients, our products <br/>are
+                        designed for everyone.</p>
+                    <a href="#" class="btn btn-md rounded btn-secondary mt-6 bg-hover-primary border-hover-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="col-lg-7 d-flex align-items-center justify-content-center py-lg-0 py-md-17 py-13 before-video position-relative mx-lg-0 mx-3 order-lg-2"
+                 style="background-image: url('{{ '/images/video-02.jpg' | document_url }}');background-position: center;background-size: cover;" data-animate="fadeInRight">
+                <a href="https://www.youtube.com/watch?v=6v2L2UGZJAM" data-gtf-mfp="true"
+                   data-mfp-options='{"type":"iframe","preloader":false}'
+                   class="btn btn-outline-light border-3x w-98 h-98 d-flex justify-content-center align-items-center rounded-circle fs-20"><i
+                        class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-10 pt-lg-12">
+    <div class="container container-xl">
+        <h2 class="text-center mb-9" data-animate="fadeInUp">Why Shop with Glowing?</h2>
+        <div class="row">
+            {% for info in site.data.home-07.image-box %}
+            <div class="col-lg-4 mb-6 mb-lg-0" data-animate="fadeInUp">
+                <div class="card border-0 text-center">
+                    <div class="mw-140 mx-auto">
+                        <img src="{{ info.image | document_url }}" alt="{{ info.title }}">
+                    </div>
+                    <div class="card-body px-0 pt-4 mt-1 pb-0">
+                        <h3 class="fs-24 mb-3">{{ info.title }}</h3>
+                        <p class="mb-0 px-lg-6">{{ info.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="mt-7 mt-lg-13" style="background-color: #F2F1F2">
+    <div class="container container-xl">
+        <div class="row align-items-center">
+            <div class="col-lg-7" data-animate="fadeInLeft">
+                <img src="{{ '/images/countdown-05.png' | document_url }}" alt="countdown-05">
+                <div class="lable-sale-countdown postions-01 d-none fs-20 font-weight-500 w-122 h-122 bg-primary rounded-circle d-xl-flex align-items-center justify-content-center flex-column text-white">
+                    Save<span class="fs-24 font-weight-600">$19.00</span></div>
+            </div>
+            <div class="col-lg-5 py-lg-0 py-9" data-animate="fadeInRight">
+                <div class="d-flex align-items-center fs-15 text-secondary text-uppercase font-weight-600 letter-spacing-01 mb-4">
+                    Special offer<span class="badge badge-primary fs-15 font-weight-500 py-1 px-2 ml-2">-20%</span>
+                </div>
+                <h2>Intensive Glow C+ Serum</h2>
+                <p class="fs-18 mw-460 mb-4">Made using clean, non-toxic ingredients, our products are designed for
+                    everyone.</p>
+                <div class="countdown d-flex mb-7 mx-n2 mx-sm-n4" data-countdown="true"
+                     data-countdown-end="Jan 27, 2023 18:24:25">
+                    <div class="countdown-item center px-2 px-sm-4">
+                        <span class="fs-40 fs-sm-48 lh-1 text-primary font-weight-600 day">02</span>
+                    </div>
+                    <div class="separate fs-30">:</div>
+                    <div class="countdown-item text-center px-2 px-sm-4">
+                        <span class="fs-40 fs-sm-48 lh-1 text-primary font-weight-600 hour">24</span>
+                    </div>
+                    <div class="separate fs-30">:</div>
+                    <div class="countdown-item text-center px-2 px-sm-4">
+                        <span class="fs-40 fs-sm-48 lh-1 text-primary font-weight-600 minute">15</span>
+                    </div>
+                    <div class="separate fs-30">:</div>
+                    <div class="countdown-item text-center px-2 px-sm-4">
+                        <span class="fs-40 fs-sm-48 lh-1 text-primary font-weight-600 second">41</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-white shadow-xs hover-white bg-hover-secondary border-hover-secondary">Get Only $39,00</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-11 pt-lg-13">
+    <div class="container container-xl">
+        <div class="row">
+            <div class="col-lg-4 d-flex flex-column justify-content-lg-between mb-8 mb-lg-0" data-animate="fadeInUp">
+                <div>
+                    <h2>Testimonials</h2>
+                    <p class="fs-18" style="max-width:380px">Made using clean, non-toxic ingredients, our products are
+                        designed for everyone.</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <div class="custom-arrows-02-prev position-static" aria-label="Previous"><i
+                            class="far fa-chevron-left"></i></div>
+                    <div class="custom-arrows-02-next position-static ml-4" aria-label="Next"><i
+                            class="far fa-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="slick-slider custom-arrows-02 custom-slider-04"
+                     data-slick-options='{"slidesToShow": 2,"centerMode":false,"infinite":true,"autoplay":true,"dots":false,"arrows":true,"fade":false,"cssEase":"ease-in-out","speed":600,"responsive":[{"breakpoint": 1024,"settings": {"slidesToShow":2}},{"breakpoint": 992,"settings": {"slidesToShow":2}},{"breakpoint": 768,"settings": {"slidesToShow": 1}}]}'>
+                    {% for info in site.data.home-07.testimonial %}
+                    <div class="box" data-animate="fadeInUp">
+                        <div class="card border-0 p-sm-7 p-6 bg-gray rounded">
+                            <div class="card-body px-3 py-0">
+                                <ul class="list-inline mb-4">
+                                    <li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="list-inline-item fs-14 text-primary mr-0"><i class="fas fa-star"></i>
+                                    </li>
+                                </ul>
+                                <p class="card-text mb-7 fs-20 font-weight-600 text-primary">
+                                    {{ info.description }}
+                                </p>
+                                <div class="media align-items-center">
+                                    <img src="{{ info.image  | document_url }}" alt="testimonial" class="mr-4 w-auto">
+                                    <div class="media-body">
+                                        <h4 class="text-secondary fs-15 font-weight-bold text-uppercase mb-1 letter-spacing-01">
+                                            {{ info.name }}</h4>
+                                        <p class="card-text">{{ info.position }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-10 pb-lg-12 pb-6 pb-md-9">
+    <div class="container container-xl">
+        <div class="row">
+            <div class="col-12 text-center mb-6" data-animate="fadeInUp">
+                <h2>More to Discover</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for info in site.data.home-07.image-box-02 %}
+            <div class="col-md-4 mb-6 mb-md-0" data-animate="fadeInUp">
+                <div class="card border-0 text-center hover-shine">
+                    <a href="{{ info.url | document_url }}" class="d-block hover-shine hover-zoom-in">
+                        <img src="{{ info.image | document_url }}" alt="{{ info.title }}">
+                    </a>
+                    <div class="card-body px-0 pt-6 pb-0">
+                        <h3 class="fs-24 mb-2"><a href="{{ info.url | document_url }}" class="text-decoration-none">{{ info.title }}</a></h3>
+                        <a href="{{ info.url | document_url}}" class="btn btn-link text-secondary">{{ info.btn }}<i class="far fa-arrow-right fs-12 pl-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

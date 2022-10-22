@@ -1,0 +1,52 @@
+---
+layout: docs
+title: Our Team
+description: Customer our team.
+group: templates
+toc: true
+---
+<h2>Our Team 01</h2>
+
+{% capture example %}
+<div style="max-width: 340px;">
+    <div class="card border-0 hover-change-image">
+        <div class="position-relative overflow-hidden">
+            <img class="card-img" src="{{ '/images/our-team-01.jpg' | document_url }}" alt="our-team-01">
+            <ul class="list-inline text-center card-img-overlay top-auto mb-0 py-2 bg-border-color hover-image hover-bottom-to-top">
+                <li class="list-inline-item mr-6"><a href="#" class="fs-18"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item mr-6"><a href="#" class="fs-18"><i class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item mr-6"><a href="#" class="fs-18"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="fs-18"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="card-body px-0">
+            <h4 class="fs-20">Slava Fedutik</h4>
+            <p class="card-text">-  Founder, Chief Creative</p>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Our Team 02</h2>
+
+{% capture example %}
+<div style="max-width: 340px;">
+    <div class="card border-0 hover-change-image">
+        <div class="position-relative overflow-hidden">
+            <img class="card-img" src="{{ '/images/our-team-01.jpg' | document_url }}" alt="our-team-01">
+            <ul class="list-inline text-center card-img-overlay top-auto mb-0 py-2 bg-border-color hover-image hover-bottom-to-top">
+                <li class="list-inline-item mr-6"><a href="#" class="fs-18"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item mr-6"><a href="#" class="fs-18"><i class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item mr-6"><a href="#" class="fs-18"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="fs-18"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="card-body px-0 text-center">
+            <h4 class="fs-20">Slava Fedutik</h4>
+            <p class="card-text">-  Founder, Chief Creative</p>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}

@@ -1,0 +1,56 @@
+---
+layout: slider-docs
+title: "Slider 06"
+category_text: Slider
+category_url: /docs/templates/slider.html
+---
+{% include components/page-title/docs.html %}
+<section class="overflow-hidden position-relative vh-100 d-flex align-items-end bg-video">
+    <div class="embed-responsive embed-responsive-16by9 position-absolute h-100">
+        <iframe class="border-0" id="existing-iframe-example"
+                src="https://www.youtube.com/embed/U5DhkJrtUjM?autoplay=1&rel=0&playsinline=1&mute=1&controls=0&loop=1&playlist=U5DhkJrtUjM"></iframe>
+    </div>
+    <div class="container container-xl pt-10 pb-11 pb-lg-13">
+        <div data-animate="fadeInDown">
+            <p class="text-white mb-5 font-weight-600 fs-24 lh-15">Find Inspration</p>
+            <h1 class="text-white font-weight-500 mb-5 fs-48 fs-md-68 lh-128">Natural Mineral  <br> Water Spray</h1>
+        </div>
+        <a href="{{ '/shop-page-04.html' | document_url }}"
+           class="btn btn-link btn-light bg-transparent text-white border-bottom border-0 rounded-0 p-0 fs-16 font-weight-600 border-2x"
+           data-animate="fadeInUp">
+            Discover now
+            <svg class="icon icon-arrow-right">
+                <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+        </a>
+    </div>
+</section>
+<section class="py-10">
+    <div class="container">
+        <div class="bg-gray-01 overflow-auto">
+            {% highlight html %}
+            <section class="overflow-hidden position-relative vh-100 d-flex align-items-end bg-video">
+                <div class="embed-responsive embed-responsive-16by9 position-absolute h-100">
+                    <iframe class="border-0" id="existing-iframe-example"
+                            src="https://www.youtube.com/embed/U5DhkJrtUjM?autoplay=1&rel=0&playsinline=1&mute=1&controls=0&loop=1&playlist=U5DhkJrtUjM"
+                            frameborder="0"></iframe>
+                </div>
+                <div class="container container-xl pt-10 pb-11 pb-lg-13">
+                    <div data-animate="fadeInDown">
+                        <p class="text-white mb-5 font-weight-600 fs-24 lh-15">Find Inspration</p>
+                        <h1 class="text-white font-weight-500 mb-5 fs-48 fs-md-68 lh-128">Natural Mineral  <br> Water Spray</h1>
+                    </div>
+                    <a href="{{ '/shop-page-04.html' | document_url }}"
+                       class="btn btn-link btn-light bg-transparent text-white border-bottom border-0 rounded-0 p-0 fs-16 font-weight-600 border-2x"
+                       data-animate="fadeInUp">
+                        Discover now
+                        <svg class="icon icon-arrow-right">
+                            <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            {% endhighlight %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,114 @@
+---
+layout: home-15
+title: "Home 15"
+category_text: "Home"
+category_url: /home-15.html
+---
+<section>
+    <div class="row no-gutters">
+        <div class="col-lg-6 mh-lg-100vh mh-600 bg-img-cover-center"
+             style="background-image: url('{{ '/images/hot-product-03.jpg' | document_url }}');" data-animate="zoomIn">
+        </div>
+        <div class="col-lg-6 mh-lg-100vh mh-600 d-flex align-items-center py-11" style="background-color:#f8ece9" data-animate="zoomIn">
+            <div class="card border-0 text-center hot-product bg-transparent w-100">
+                <div class="mx-auto position-relative z-index-1">
+                    <img src="{{ '/images/image-box-22.png' | document_url }}" alt="shroom serum">
+                </div>
+                <div class="card-body px-0 pt-9 pb-0">
+                    <h6 class="card-subtitle mb-2 text-red font-weight-400 custom-font-03 fs-70 fs-md-90 fs-xl-122 lh-1">
+                        Hot Product</h6>
+                    <h3 class="fs-40 text-uppercase letter-spacing-003 mb-5">shroom serum</h3>
+                    <p class="mb-0 fs-18 mx-auto mb-4" style="max-width: 390px">Lorem ipsum dolor sit amet,
+                        consectetur adipi, scing seddo eiusmod temporincididunt ut labore et dolore magna
+                        aliqua. </p>
+                    <a href="{{ '/shop-page-04.html' | document_url }}"
+                       class="btn btn-link bg-transparent text-secondary border-secondary rounded-0 border-bottom border-0 p-0 fs-16 font-weight-600 border-2x">
+                        Shop Now
+                        <svg class="icon icon-arrow-right">
+                            <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-lg-6 mh-lg-100vh mh-600 d-flex align-items-center py-11 bg-white order-2 order-lg-1" data-animate="zoomIn">
+            <div class="card border-0 text-center hot-product bg-transparent w-100">
+                <div class="mx-auto position-relative z-index-1">
+                    <img src="{{ '/images/hot-product-01.png' | document_url }}" alt="shroom serum">
+                </div>
+                <div class="card-body px-0 pt-9 pb-0">
+                    <h6 class="card-subtitle mb-2 text-red font-weight-400 custom-font-03 fs-70 fs-md-90 fs-xl-122 lh-1">
+                        Hot Product</h6>
+                    <h3 class="fs-40 text-uppercase letter-spacing-003 mb-5">fancial cleanser</h3>
+                    <p class="mb-0 fs-18 mx-auto mb-4" style="max-width: 390px">Lorem ipsum dolor sit amet,
+                        consectetur adipi, scing seddo eiusmod temporincididunt ut labore et dolore magna
+                        aliqua. </p>
+                    <a href="{{ '/shop-page-04.html' | document_url }}"
+                       class="btn btn-link bg-transparent text-secondary border-secondary rounded-0 border-bottom border-0 p-0 fs-16 font-weight-600 border-2x">
+                        Shop Now
+                        <svg class="icon icon-arrow-right">
+                            <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mh-lg-100vh mh-600 bg-img-cover-center order-1 order-lg-2"
+             style="background-image: url('{{ '/images/hot-product-04.jpg' | document_url }}');" data-animate="zoomIn">
+        </div>
+    </div>
+</section>
+<section class="pt-lg-13 pt-10 pb-8 pb-lg-10" style="background-color: #F8F8F8">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="mb-0 fs-60 custom-font-03 text-red font-italic text-center lh-12" data-animate="fadeInUp">You must try</p>
+                <h2 class="text-center mb-3 text-uppercase letter-spacing-003" data-animate="fadeInUp">daily skincare set</h2>
+            </div>
+            {% for product in site.data.home-15.products %}
+            <div class="col-sm-6 col-lg-4" data-animate="fadeInUp">
+                <div class="card border-0 product bg-transparent">
+                    <div class="position-relative">
+                        <img src="{{ product.image | document_url }}" alt="{{ product.title }}">
+                        <div class="card-img-overlay d-flex p-3 flex-column">
+                            <div class="mb-auto d-flex justify-content-center">
+                                <div>
+                                    {%- assign label = product.label | slugify -%}
+                                    {% if label == "sale" %}
+                                    <span class="badge badge-red">-20%</span>
+                                    {% endif %}
+                                    {% if label == "new" %}
+                                    <span class="badge badge-primary">New</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-4 text-center px-0">
+                        <h2 class="card-title fs-15 font-weight-500 mb-2"><a href="{{ product.url | document_url }}"
+                                                                             class="hover-red">{{ product.title
+                            }}</a>
+                        </h2>
+                        <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+                            {% if product.sale %}
+                            <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">{{ product.sale }}</span>
+                            {% endif %}
+                            <span>{{ product.price }}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="bg-img-cover-center py-lg-18 py-13 d-flex justify-content-center"
+         style="background-image: url('{{ '/images/video-03.jpg' | document_url }}')">
+    <a href="https://www.youtube.com/watch?v=6v2L2UGZJAM" data-animate="zoomIn" data-gtf-mfp="true"
+       data-mfp-options='{"type":"iframe","preloader":false}'
+       class="btn btn-rounded btn-light w-115 h-115 d-flex justify-content-center align-items-center rounded-circle fs-30 my-8">
+        <i class="fas fa-play"></i>
+    </a>
+</section>

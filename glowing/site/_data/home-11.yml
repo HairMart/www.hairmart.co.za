@@ -1,0 +1,67 @@
+products:
+  - image: /images/product-05.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-02.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-03.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-07.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+
+products-best-sale:
+  - image: /images/product-09.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-11.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-08.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-10.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+
+instagram:
+  - image: /images/instagram-12.jpg
+    title: Instagram
+
+  - image: /images/instagram-13.jpg
+    title: Instagram
+
+  - image: /images/instagram-10.jpg
+    title: Instagram
+
+  - image: /images/instagram-09.jpg
+    title: Instagram
+
+  - image: /images/instagram-08.jpg
+    title: Instagram

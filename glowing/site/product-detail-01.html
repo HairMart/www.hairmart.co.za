@@ -1,0 +1,232 @@
+---
+layout: default
+title: "Product Detail 01"
+---
+<section class="py-2 bg-gray-2">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-site py-0 d-flex justify-content-center">
+                <li class="breadcrumb-item"><a class="text-decoration-none text-body"
+                                               href="{{ '/index.html' | document_url }}">Home</a>
+                </li>
+                <li class="breadcrumb-item pl-0 d-flex align-items-center"><a class="text-decoration-none text-body"
+                                                                              href="{{ '/shop-page-01.html' | document_url }}">Shop
+                    Grid Layout</a>
+                </li>
+                <li class="breadcrumb-item active pl-0 d-flex align-items-center" aria-current="page">Natural Coconut
+                    Cleansing Oil
+                </li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<section class="pt-11 pb-9 pb-lg-10 product-details-layout-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pr-xl-9 mb-8 mb-md-0">
+                <div class="galleries-product galleries-product-01 position-relative d-flex ">
+                    <div class="slick-slider slider-for mx-0 pl-xl-5"
+                         data-slick-options='{"slidesToShow": 1,"vertical":true, "autoplay":false,"dots":false,"arrows":false,"asNavFor": ".slider-nav","responsive":[{"breakpoint": 1200,"settings": {"vertical": false}}]}'>
+                        {% for gallery in site.data.product-detail-01.galleries %}
+                        <div class="box px-0">
+                            {%- assign video = gallery.video | slugify -%}
+                            {% if video == "none" %}
+                            <div class="card p-0 rounded-0 border-0">
+                                <a href="{{ gallery.image | document_url }}" class="card-img" data-gtf-mfp="true"
+                                   data-gallery-id="02">
+                                    <img src="{{ gallery.image | document_url }}" alt="product gallery" class="w-100">
+                                </a>
+                            </div>
+                            {% else %}
+                            <div class="card p-0 rounded-0 border-0">
+                                <img src="{{ gallery.image | document_url }}" class="card-img w-100" alt="product gallery">
+                                <div class="card-img-overlay d-inline-flex flex-column align-items-center justify-content-center">
+                                    <a href="{{ gallery.video }}" data-gtf-mfp="true"
+                                       data-mfp-options='{"type":"iframe","preloader":false}'
+                                       class="btn btn-rounded text-secondary btn-light w-90px h-90 my-lg-4 d-flex justify-content-center align-items-center rounded-circle fs-30">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="slick-slider slider-nav mx-n1 mx-xl-0"
+                         data-slick-options='{"slidesToShow": 4,"vertical":true, "autoplay":false,"dots":false,"arrows":false,"asNavFor": ".slider-for","focusOnSelect": true,"responsive":[{"breakpoint": 1200,"settings": {"vertical": false}}]}'>
+                        {% for gallery in site.data.product-detail-01.galleries %}
+                        <div class="box px-1 px-xl-0 py-4 pt-xl-0">
+                            {%- assign video = gallery.video | slugify -%}
+                            {% if video == "none" %}
+                            <img src="{{ gallery.image | document_url }}" class="w-100" alt="product gallery">
+                            {% else %}
+                            <div class="card border-0">
+                                <img src="{{ gallery.image | document_url }}" class="w-100" alt="product gallery">
+                                <div class="card-img-overlay d-inline-flex flex-column align-items-center justify-content-center">
+                                    <div class="text-secondary bg-white d-flex justify-content-center align-items-center rounded-circle fs-8 w-24px h-24">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="d-flex align-items-center mb-3">
+                    <span class="text-line-through">$39.00</span>
+                    <span class="fs-18 text-secondary font-weight-bold ml-3">$29.00</span>
+                    <span class="badge badge-primary fs-16 ml-4 font-weight-600 px-3">20%</span>
+                </p>
+                <h2 class="fs-24 mb-2">Natural Coconut Cleansing Oil</h2>
+                <div class="d-flex align-items-center flex-wrap mb-3 lh-12">
+                    <p class="mb-0 font-weight-600 text-secondary">4.86</p>
+                    <ul class="list-inline d-flex mb-0 px-3 rating-result">
+                        <li class="list-inline-item mr-0">
+                            <span class="text-primary fs-12 lh-2"><i class="fas fa-star"></i></span>
+                        </li>
+                        <li class="list-inline-item mr-0">
+                            <span class="text-primary fs-12 lh-2"><i class="fas fa-star"></i></span>
+                        </li>
+                        <li class="list-inline-item mr-0">
+                            <span class="text-primary fs-12 lh-2"><i class="fas fa-star"></i></span>
+                        </li>
+                        <li class="list-inline-item mr-0">
+                            <span class="text-primary fs-12 lh-2"><i class="fas fa-star"></i></span>
+                        </li>
+                        <li class="list-inline-item mr-0">
+                            <span class="text-primary fs-12 lh-2"><i class="fas fa-star"></i></span>
+                        </li>
+                    </ul>
+                    <a href="#" class="pl-3 border-left border-gray-2 text-body">Read 2947 reviews</a>
+                </div>
+                <p class="mb-5">Niacinamide and Vitamin C are two anti-aging superstars but not usually formulated
+                    together because of their different pH levels.</p>
+                <form>
+                    <div class="form-group shop-swatch mb-4 d-flex align-items-center">
+                        <span class="font-weight-600 text-secondary mr-4">Size: </span>
+                        <ul class="list-inline d-flex justify-content-start mb-0">
+                            <li class="list-inline-item mr-2 selected font-weight-600">
+                                <a href="#"
+                                   class="fs-14 p-2 lh-13 d-block swatches-item rounded text-decoration-none border"
+                                   data-var="full size">Full size</a>
+                            </li>
+                            <li class="list-inline-item font-weight-600">
+                                <a href="#"
+                                   class="fs-14 p-2 lh-13 d-block swatches-item rounded text-decoration-none border"
+                                   data-var="mini size">Mini size</a>
+                            </li>
+                        </ul>
+                        <select name="swatches" class="form-select swatches-select d-none"
+                                aria-label="Default select example">
+                            <option selected value="full size">Full size</option>
+                            <option value="mini size">Mini size</option>
+                        </select>
+                    </div>
+                    <p class="text-secondary font-weight-600 mb-3">Quantity: </p>
+                    <div class="custom-control custom-radio mb-2">
+                        <input type="radio" id="buy1" name="quality" class="custom-control-input" checked>
+                        <label class="custom-control-label custom-control-label-secondary" for="buy1">
+                            Buy 1 - <span class="text-line-through mx-1 fs-13 text-body">$39.00</span>
+                            <span class="font-weight-bold">$29.00</span>
+                        </label>
+                        <span class="badge badge-primary bg-transparent fs-12 border text-primary ml-2 font-weight-bold">Saved 10%</span>
+                    </div>
+                    <div class="custom-control custom-radio mb-2">
+                        <input type="radio" id="buy2" name="quality" class="custom-control-input">
+                        <label class="custom-control-label custom-control-label-secondary" for="buy2">
+                            Buy 2 - <span class="text-line-through mx-1 fs-13 text-body">$78.00</span>
+                            <span class="font-weight-bold">$56.00</span>
+                            <span class="badge badge-primary bg-transparent fs-12 border text-primary ml-2 font-weight-bold">Saved 15%</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-radio mb-2">
+                        <input type="radio" id="buy3" name="quality" class="custom-control-input">
+                        <label class="custom-control-label custom-control-label-secondary" for="buy3">
+                            Buy 3 - <span class="text-line-through mx-1 fs-13 text-body">$117.00</span>
+                            <span class="font-weight-bold">$72.00</span>
+                            <span class="badge badge-primary bg-transparent fs-12 border text-primary ml-2 font-weight-bold">Saved 20%</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-radio mb-6">
+                        <input type="radio" id="buy4" name="quality" class="custom-control-input">
+                        <label class="custom-control-label custom-control-label-secondary" for="buy4">
+                            Buy 4 - <span class="text-line-through mx-1 fs-13 text-body">$195.00</span>
+                            <span class="font-weight-bold">$99.00</span>
+                            <span class="badge badge-primary bg-transparent fs-12 border text-primary ml-2 font-weight-bold">Saved 30%</span>
+                        </label>
+                    </div>
+                    <button type="submit"
+                            class="btn btn-lg fs-18 btn-secondary btn-block mb-4 bg-hover-primary border-0">Add To Bag
+                    </button>
+                </form>
+                <div class="d-flex align-items-center flex-wrap mt-5">
+                    <a href="#" class="text-decoration-none font-weight-bold fs-16 mr-6 d-flex align-items-center">
+                        <svg class="icon icon-arrows-left-right-light fs-20">
+                            <use xlink:href="#icon-arrows-left-right-light"></use>
+                        </svg>
+                        <span class="ml-2">Compare</span>
+                    </a>
+                    <a href="#" class="text-decoration-none font-weight-bold fs-16 d-flex align-items-center">
+                        <svg class="icon icon-heart-light fs-20">
+                            <use xlink:href="#icon-heart-light"></use>
+                        </svg>
+                        <span class="ml-2">Add to wishlist</span>
+                    </a>
+                </div>
+                <ul class="list-unstyled border-top pt-5 mt-5">
+                    <li class="row mb-2">
+                        <span class="d-block col-4 col-lg-2 text-secondary font-weight-600 fs-14">Sku:</span>
+                        <span class="d-block col-8 col-lg-10">SF09281</span>
+                    </li>
+                    <li class="row mb-2">
+                        <span class="d-block col-4 col-lg-2 text-secondary font-weight-600 fs-14">Categories:</span>
+                        <span class="d-block col-8 col-lg-10">Makeup, Skincare</span>
+                    </li>
+                    <li class="row mb-2">
+                        <span class="d-block col-4 col-lg-2 text-secondary font-weight-600 fs-14">Share:</span>
+                        <ul class="list-inline d-flex align-items-center mb-0 col-8 col-lg-10">
+                            <li class="list-inline-item mr-4">
+                                <a href="#" class="fs-14 lh-1 text-body hover-secondary">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-4">
+                                <a href="#" class="fs-14 lh-1 text-body hover-secondary">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-4">
+                                <a href="#" class="fs-14 lh-1 text-body hover-secondary">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="fs-14 lh-1 text-body hover-secondary">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-10 pt-lg-12 pb-10 pb-md-6 pb-lg-11 border-top">
+    <div class="container">
+        {% include single-product/tabs.html %}
+    </div>
+</section>
+<section class="pt-10 pt-lg-13 pb-9 pb-lg-11 border-top">
+    <div class="container">
+        {% include single-product/you-may-also-like-01.html %}
+    </div>
+</section>
+<section class="pt-10 pb-11 py-lg-13 border-top">
+    <div class="container">
+        {% include single-product/review-layout-01.html %}
+    </div>
+</section>
