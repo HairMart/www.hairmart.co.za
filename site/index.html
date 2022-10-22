@@ -1,455 +1,245 @@
 ---
-layout: index
-title: "Landing Page"
-category_text: "index"
+layout: home-16
+title: "HairMart"
+category_text: "Home"
 category_url: /index.html
 ---
-
-<section class="bg-cover pt-16 pb-8 mh-100vh d-flex justify-content-center flex-column parralax-images overflow-hidden"
-         style="background-image: url('{{ '/images/bg-landing-page-01.jpg' | document_url }}');">
-	<p class="fs-lg-56 fs-40 font-weight-normal text-center text-primary custom-font" data-animate="fadeInUp">Made for
-		You!</p>
-	<h2 class="fs-lg-48 fs-32 text-center px-3" data-animate="fadeInUp">Beauty & Cosmetics Shop HTML Template</h2>
-	<div class="mt-lg-9 mt-6 position-relative w-100 mx-auto" style="max-width: 1660px">
-		<div class="layer z-index-2 text-center position-relative mx-lg-16">
-			<img src="{{ '/images/slider-landing-01.png' | document_url }}" alt="Slider Landing 01">
-		</div>
-		<div class="layer position-absolute z-index-1 d-none d-lg-block"
-		     style="top:18%;left:5%;right:73%">
-			<img src="{{ '/images/slider-landing-02.png' | document_url }}" alt="Slider Landing 02">
-		</div>
-		<div class="layer position-absolute z-index-1 d-none d-lg-block"
-		     style="left:-2%;bottom: -7%;right: 65%;">
-			<img src="{{ '/images/slider-landing-03.png' | document_url }}" alt="Slider Landing 03">
-		</div>
-		<div class="layer position-absolute z-index-1 d-none d-lg-block"
-		     style="top:25%;right: 3%;">
-			<img src="{{ '/images/slider-landing-04.png' | document_url }}" alt="Slider Landing 04">
-		</div>
-		<div class="layer position-absolute z-index-1 d-none d-lg-block"
-		     style="top:30%;right: 11%;">
-			<img src="{{ '/images/slider-landing-05.png' | document_url }}" alt="Slider Landing 05">
-		</div>
-		<div class="layer position-absolute z-index-3 d-none d-lg-block"
-		     style="top:-1%;right: 4%;">
-			<img src="{{ '/images/slider-landing-06.png' | document_url }}" alt="Slider Landing 06">
-		</div>
-		<div class="layer position-absolute z-index-3 d-none d-lg-block"
-		     style="bottom: -9%;right: -2%;left:74%">
-			<img src="{{ '/images/slider-landing-07.png' | document_url }}" alt="Slider Landing 07">
-		</div>
-	</div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7/10 mb-6 mb-lg-0" data-animate="fadeInUp">
+                <div class="card border-0 banner banner-08 hover-zoom-in hover-shine">
+                    <div class="card-img bg-img-cover-center"
+                         style="background-image: url('{{ '/images/banner-hair.png' | document_url }}');"></div>
+                    <div class="card-img-overlay d-inline-flex flex-column p-6 p-md-9">
+                        <h3 class="card-title fs-40 text-white lh-129 mb-2">Empower Yourself</h3>
+                        <p class="card-text fs-18 text-white font-weight-500">
+                            Get the hair you want to feel
+                        </p>
+                        <div>
+                            <a href="#"
+                               class="btn btn-link btn-light bg-transparent text-white hover-white border-0 border-bottom rounded-0 p-0 fs-16 font-weight-600">
+                                Shop Now
+                                <svg class="icon icon-arrow-right">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3/10">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-12" data-animate="fadeInUp">
+                        <div class="card border-0 banner banner-09 hover-zoom-in hover-shine">
+                            <div class="card-img bg-img-cover-center"
+                                 style="background-image: url('{{ '/images/haircare.png' | document_url }}');"></div>
+                            <div class="card-img-overlay d-inline-flex flex-column p-6 p-md-9 align-items-center justify-content-center">
+                                <a href="#"
+                                   class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Haircare</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-12 mt-6 mt-sm-0 mt-lg-6" data-animate="fadeInUp">
+                        <div class="card border-0 banner banner-09 hover-zoom-in hover-shine">
+                            <div class="card-img bg-img-cover-center"
+                                 style="background-image: url('{{ '/images/banner-44.jpg' | document_url }}');"></div>
+                            <div class="card-img-overlay d-inline-flex flex-column p-6 p-md-9 align-items-center justify-content-center">
+                                <a href="#"
+                                   class="fs-16 font-weight-600 btn text-secondary hover-white bg-white bg-hover-secondary shadow-1">Nails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<section class="pt-lg-13 pt-11 pb-lg-10 pb-6" id="demos" style="background-image: url('{{ '/images/bg-landing-home-02.png' | document_url }}');background-repeat: no-repeat;
-    background-position: right top">
-	<div class="container container-xl">
-		<span class="d-block text-center fs-120 font-weight-bold text-primary lh-1 mb-3" data-animate="fadeInUp">18<sup class="fs-70 pl-3"
-		                                                                                        style="top: -0.7em;">+</sup></span>
-		<h2 class="text-center fs-lg-48 fs-40 mb-0" data-animate="fadeInUp">Impressive Demos</h2>
-		<p class="fs-lg-48 fs-32 font-weight-normal text-center text-primary custom-font mb-9" data-animate="fadeInUp">Unique Homepages</p>
-		<div class="row text-center">
-			{% for demo in site.data.index.demos %}
-			<div class="col-lg-4 col-md-6"  data-animate="fadeInUp">
-				<div class="card border-0 shadow-3 shadow-hover-4 px-3 hover-transform-20 mb-8">
-					<a href="{{ demo.url | document_url }}" class="d-block card-img pt-6 rounded-lg mt-3"
-					   style="background-color:#F2F2F2">
-						<img src="{{ demo.image | document_url }}" alt="{{ demo.title }}"
-						     style="box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.15);">
-					</a>
-					<div class="card-body px-0">
-						<h4 class="card-text fs-20 font-weight-bold text-secondary"><a
-								href="{{ demo.url | document_url }}">{{ demo.title }}</a></h4>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-			<div class="col-lg-4 col-md-6" data-animate="fadeInUp">
-				<div class="card border-0  shadow-3 shadow-hover-4 hover-transform-20 mb-8" >
-					<img src="{{ '/images/Coming-Soon.jpg' | document_url }}" alt="Coming Soon" class="mx-auto pt-3"
-					     style="max-width: 276px;">
-					<div class="card-body p-0">
-						<h4 class="card-text fs-56 font-weight-normal custom-font text-primary pb-6">Coming Soon</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<section class="pt-9 pt-lg-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" data-animate="fadeInUp">
+                <div class="card bg-transparent border-0 text-center pt-8 pt-lg-11 pb-7">
+                    <div class="card-body">
+                        <p class="card-text fs-70 fs-sm-90 fs-lg-142 font-italic custom-font-03 position-absolute pos-fixed-top-center lh-1 w-fit-content mb-0 z-index-1 mt-1" style="color: #EFEAF0">Glowing Beauty</p>
+                        <h6 class="card-subtitle fs-15 letter-spacing-01 mb-5 text-uppercase position-relative z-index-2">our products</h6>
+                        <h2 class="card-title mb-1 mx-auto z-index-2 position-relative" style="max-width: 670px">Because You Need Time for Yourself.
+                            Blend Beauty in You</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-lg-1">
+            {% for product in site.data.home-16.products %}
+            <div class="col-lg-3 col-sm-6 mb-5" data-animate="fadeInUp">
+                <div class="card border-0 product">
+                    <div class="position-relative">
+                        <img src="{{ product.image | document_url }}" alt="{{ product.title }}">
+                        <div class="card-img-overlay d-flex p-3">
+                            <div>
+                                {%- assign label = product.label | slugify -%}
+                                {% if label == "sale" %}
+                                <span class="badge badge-violet">-20%</span>
+                                {% endif %}
+                                {% if label == "new" %}
+                                <span class="badge badge-warning">New</span>
+                                {% endif %}
+                            </div>
+                            <div class="my-auto w-100 content-change-vertical">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="View products"
+                                   class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+                                    <svg class="icon icon-shopping-bag-open-light fs-24">
+                                        <use xlink:href="#icon-shopping-bag-open-light"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Quick view"
+                                   class="preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none">
+									<span data-toggle="modal" data-target="#quick-view">
+										<svg class="icon icon-eye-light fs-24">
+											<use xlink:href="#icon-eye-light"></use>
+										</svg>
+									</span>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to wishlist"
+                                   class="add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
+                                    <svg class="icon icon-star-light fs-24">
+                                        <use xlink:href="#icon-star-light"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"
+                                   class="add-to-compare ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle">
+                                    <svg class="icon icon-arrows-left-right-light fs-24">
+                                        <use xlink:href="#icon-arrows-left-right-light"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body px-0 pt-4 text-center">
+                        <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
+                            {% if product.sale %}
+                            <span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">{{ product.sale }}</span>
+                            {% endif %}
+                            <span>{{ product.price }}</span>
+                        </p>
+                        <h2 class="card-title fs-15 font-weight-500 mb-2"><a href="{{ product.url | document_url }}" class="hover-violet">{{ product.title
+                            }}</a>
+                        </h2>
+                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                            <ul class="list-inline mb-0 lh-1">
+                                <li class="list-inline-item fs-12 text-violet mr-0"><i class="fas fa-star"></i>
+                                </li>
+                                <li class="list-inline-item fs-12 text-violet mr-0"><i class="fas fa-star"></i>
+                                </li>
+                                <li class="list-inline-item fs-12 text-violet mr-0"><i class="fas fa-star"></i>
+                                </li>
+                                <li class="list-inline-item fs-12 text-violet mr-0"><i class="fas fa-star"></i>
+                                </li>
+                                <li class="list-inline-item fs-12 text-violet mr-0"><i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <span class="card-text fs-14 font-weight-400 pl-2 lh-1">{{ product.reviews }} reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-12 text-center mt-2" data-animate="fadeInUp">
+                <a href="{{ '/shop-page-01.html' | document_url }}"
+                   class=" btn btn-outline-secondary border border-2x">Shop All Products</a>
+            </div>
+        </div>
+    </div>
 </section>
-<section class="bg-gray pt-lg-15 py-11 pb-lg-13" id ="shops">
-	<div class="container container-lg-full">
-		<span class="d-block text-center fs-120 font-weight-bold text-primary lh-1 mb-3" data-animate="fadeInUp">05<sup class="fs-70 pl-3"
-		                                                                                        style="top: -0.7em;">+</sup></span>
-		<h2 class="text-center fs-lg-48 fs-40 mb-4" data-animate="fadeInUp">Modern Shop Layouts</h2>
-		<p class="fs-18 text-center" data-animate="fadeInUp">Modern and elegant shop layouts provide excellent shopping experience</p>
-		<div class="slick-slider custom-slick-bx-01 custom-arrow-01"
-		     data-slick-options='{"slidesToShow": 2,"dots":true,"arrows":true,"infinite":true,"responsive":[{"breakpoint": 1200,"settings": {"slidesToShow":2,"arrows":false}},{"breakpoint": 768,"settings": {"slidesToShow": 1,"arrows":false}}]}'>
-			{% for shop in site.data.index.shops %}
-			<div class="box">
-				<div class="card border-0 bg-transparent mt-8" data-animate="fadeInUp">
-					<a href="{{ shop.url | document_url }}"
-					   class="shadow-3 shadow-hover-4 hover-transform-20 card-img rounded-lg">
-						<img src="{{ shop.image | document_url }}" alt="{{ shop.title }}">
-					</a>
-					<div class="card-body px-0">
-						<h4 class="card-text fs-18 text-center text-secondary mt-5"><a
-								href="{{ shop.url | document_url }}">{{ shop.title }}</a></h4>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
+<section class="pt-11 pt-lg-13">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-2/5 mb-6 mb-lg-0" data-animate="fadeInUp">
+                <div class="card border-0 banner banner-02">
+                    <div class="card-img bg-img-cover-center"
+                         style="background-image: url('{{ '/images/banner-48.jpg' | document_url }}');"></div>
+                    <div class="card-img-overlay d-inline-flex flex-column p-6 pl-md-9 pt-md-10">
+                        <h3 class="card-title fs-42 lh-123 mb-4" style="max-width:300px">25% off Everything</h3>
+                        <p class="card-text fs-18 font-weight-500 mb-5" style="max-width: 270px;">
+                            Makeup with extended range in colors for every human.
+                        </p>
+                        <div>
+                            <a href="#"
+                               class="fs-16 font-weight-600 btn text-white bg-secondary bg-hover-violet shadow-1">Shop
+                                Sale</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3/5" data-animate="fadeInUp">
+                <div class="card border-0 banner banner-02 hover-zoom-in hover-shine">
+                    <div class="card-img bg-img-cover-center"
+                         style="background-image: url('{{ '/images/banner-46.jpg' | document_url }}');">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-12 col-lg-3/5 order-lg-1 order-2" data-animate="fadeInUp">
+                <div class="card border-0 banner banner-02 hover-zoom-in hover-shine">
+                    <div class="card-img bg-img-cover-center"
+                         style="background-image: url('{{ '/images/banner-47.jpg' | document_url }}');">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2/5 mb-6 mb-lg-0 order-lg-2 order-1" data-animate="fadeInUp">
+                <div class="card border-0 banner banner-02">
+                    <div class="card-img bg-img-cover-center"
+                         style="background-image: url('{{ '/images/banner-49.jpg' | document_url }}');"></div>
+                    <div class="card-img-overlay d-inline-flex flex-column p-6 pl-md-9 pt-md-10">
+                        <h3 class="card-title fs-42 lh-123 mb-4" style="max-width:320px">Get The Skin You Want To Feel</h3>
+                        <p class="card-text fs-18 font-weight-500 mb-5" style="max-width: 270px;">
+                            Makeup with extended range in colors for every human.
+                        </p>
+                        <div>
+                            <a href="#"
+                               class="fs-16 font-weight-600 btn text-white bg-secondary bg-hover-violet shadow-1">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<section class="pt-lg-14 pb-11 pt-9" id="product">
-	<div class="container container-3xl">
-		<div class="row align-items-center">
-			<div class="col-lg-5 ml-xl-n7 order-lg-3 pb-8 pb-lg-0">
-				<span class="d-block fs-120 font-weight-bold text-primary lh-1 mb-3" data-animate="fadeInUp">08<sup class="fs-70 pl-3"
-				                                                                            style="top: -0.7em;">+</sup></span>
-				<h2 class="fs-lg-48 fs-40 mb-4" data-animate="fadeInUp">Product Layouts</h2>
-				<p class="fs-18 mw-460" data-animate="fadeInUp">Various product layouts with great UX allow you to select the matching style for
-					your store.</p>
-			</div>
-			<div class="col-lg-2 col-4 order-lg-2">
-				<img src="{{ '/images/image-landing-21.png' | document_url }}" alt="landing 21" class="ml-xl-n12" data-animate="fadeInUp">
-			</div>
-			<div class="col-lg-5 col-8 order-lg-1">
-				<img src="{{ '/images/image-landing-93.jpg' | document_url }}" alt="landing 93" class="ml-xl-n11" data-animate="fadeInLeft"
-				     style="box-shadow: 0px 1px 36px rgba(0,0,0,0.17)">
-			</div>
-		</div>
-	</div>
-</section>
-<section class="pt-lg-2">
-	<div class="container container-xl">
-		<div class="row">
-			{% for feature in site.data.index.features %}
-			<div class="col-lg-4 col-md-6 mb-7">
-				<div class="card border-0 bg-transparent hover-bg-color" data-animate="fadeInUp">
-					<img src="{{ feature.image | document_url }}" alt="{{ feature.title }}">
-					<div class="card-body p-0">
-						<h4 class="card-text fs-20 text-center font-weight-bold mt-4">{{ feature.title }}</h4>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
-</section>
-<section class="pt-lg-13 pt-6">
-	<div class="container container-xl">
-		<div class="row align-items-center">
-			<div class="col-lg-7 text-lg-right order-lg-2">
-				<img src="{{ '/images/landing-123.png' | document_url }}" alt="landing 123" data-animate="fadeInUp">
-			</div>
-			<div class="col-lg-5 order-lg-1">
-				<h2 class="fs-48 mb-3 mt-lg-0 mt-8" data-animate="fadeInUp">Mobile Optimized</h2>
-				<p class="pb-0 fs-18" style="max-width: 400px" data-animate="fadeInUp">Glowing provides a ready-made mobile design with
-					impressive UI and the seamless shopping experience for mobile users.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="pt-lg-13 pt-9">
-	<div class="container container-xl">
-		<div class="row align-items-center">
-			<div class="col-lg-7">
-				<img src="{{ '/images/landing-124.png' | document_url }}" alt="landing 124" data-animate="fadeInUp">
-			</div>
-			<div class="col-lg-5 mt-lg-0 mt-10">
-				<span class="d-block fs-90 font-weight-bold text-primary lh-1 mb-6" data-animate="fadeInUp">05<sup
-						class="fs-60 pl-3">+</sup></span>
-				<h2 class="mb-4" data-animate="fadeInUp">Blog List Layouts</h2>
-				<p class="fs-18 mw-460" data-animate="fadeInUp">Various attractive blog layouts enable users to create impressive blog in order
-					to grow store’s audience.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="pt-lg-11 pt-7 pb-10" id="blog">
-	<div class="container container-xl">
-		<div class="slick-slider"
-		     data-slick-options='{"slidesToShow": 3,"dots":false,"arrows":true,"infinite":true,"responsive":[{"breakpoint": 1366,"settings": {"arrows":false,"dots":true}},{"breakpoint": 1200,"settings": {"slidesToShow":2,"arrows":false,"dots":true}},{"breakpoint": 768,"settings": {"slidesToShow": 1,"arrows":false,"dots":true}}]}'>
-			{% for blog in site.data.index.blogs %}
-			<div class="box">
-				<div class="card border-0 bg-transparent" data-animate="fadeInUp">
-					<a href="{{ blog.url | document_url }}"
-					   class="card-img rounded-lg hover-bg-color-02 px-5 pt-8">
-						<img src="{{ blog.image | document_url }}" alt="{{ blog.title }}" class="shadow-3">
-					</a>
-					<div class="card-body p-0">
-						<h4 class="card-text fs-20 font-weight-bold text-secondary mt-6"><a
-								href="{{ blog.url | document_url }}">{{ blog.title }}</a></h4>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
-</section>
-<section class="pb-lg-15 pb-11 pt-lg-7">
-	<div class="container container-xl">
-		<div class="row align-items-center">
-			<div class="col-lg-4 mb-lg-0 mb-7">
-				<span class="d-block fs-90 font-weight-bold text-primary lh-1 mb-6" data-animate="fadeInUp">02<sup class="fs-60 pl-3">+</sup></span>
-				<h2 class="fs-40 mb-4" data-animate="fadeInUp">Blog Post Layouts</h2>
-				<p class="fs-18" style="max-width:400px" data-animate="fadeInUp">Various attractive blog post layouts allow users to create detailed read and
-					comment on those articles.</p>
-			</div>
-			<div class="col-lg-8">
-				<div class="row">
-					{% for post in site.data.index.posts %}
-					<div class="col-sm-6 mb-sm-0 mb-8" data-animate="fadeInUp">
-						<div class="card border-0 bg-transparent">
-							<a href="{{ post.url | document_url }}"
-							   class="card-img rounded-lg hover-bg-color-02 pl-sm-8 pt-sm-8 pl-6 pt-6">
-								<img src="{{ post.image | document_url }}" alt="{{ post.title }}" class="pl-xl-1" style="border-top-right-radius:0">
-							</a>
-							<div class="card-body p-0">
-								<h4 class="card-text fs-20 font-weight-bold text-secondary mt-6"><a
-										href="{{ post.url | document_url }}">{{ post.title }}</a></h4>
-							</div>
-						</div>
-					</div>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="pt-10 pt-lg-14 pb-11 pb-lg-13 overflow-hidden" style="background-color: #F0F3F2">
-	<h2 class="fs-48 lh-116 mb-4 text-center px-3" data-animate="fadeInUp">Ready-made Pages</h2>
-	<p class="fs-18 mx-auto text-center mb-8 mb-lg-9 px-3" style="max-width: 760px" data-animate="fadeInUp">Essential inner pages for an online
-		store are
-		equipped and ready to use.
-	</p>
-	<div class="made-pages container-3xl mx-auto">
-		<div class="d-flex flex-column flex-sm-row mb-sm-7 made-pages-1">
-			<div class="px-3 px-sm-2 px-lg-5 mb-6 mb-sm-0" data-animate="fadeInUp">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/about-us-02.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-110.jpg' | document_url }}" alt="about-us-02">
-				</a>
-			</div>
-			<div class="px-3 px-sm-2 px-lg-5 mb-6 mb-sm-0" data-animate="fadeInUp">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/about-us-02.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-111.jpg' | document_url }}" alt="about-us-02"></a>
-			</div>
-			<div class="px-3 px-sm-2 px-lg-5 mb-6 mb-sm-0" data-animate="fadeInUp">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/about-us-01.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-112.jpg' | document_url }}" alt="about-us-01">
-				</a>
-			</div>
-			<div class="px-3 px-sm-2 px-lg-5 mb-6 mb-sm-0" data-animate="fadeInUp">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/about-us-01.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-113.jpg' | document_url }}" alt="about-us-01">
-				</a>
-			</div>
-			<div class="px-3 px-sm-2 px-lg-5 mb-6 mb-sm-0" data-animate="fadeInUp">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/about-us-02.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-114.jpg' | document_url }}" alt="about-us-02">
-				</a>
-			</div>
-		</div>
-		<div class="d-flex flex-column flex-sm-row made-pages-2" data-animate="fadeInUp">
-			<div class="px-3 px-sm-2 px-lg-5 mb-6 mb-sm-0">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/find-a-store.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-115.jpg' | document_url }}" alt="store">
-				</a>
-			</div>
-			<div class="px-3 px-sm-2 px-lg-5 mb-6 mb-sm-0" data-animate="fadeInUp">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/contact-us-01.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-116.jpg' | document_url }}" alt="contact-us-01">
-				</a>
-			</div>
-			<div class="px-3 px-sm-2 px-lg-5 mb-6 mb-sm-0" data-animate="fadeInUp">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/faqs.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-117.jpg' | document_url }}" alt="faq">
-				</a>
-			</div>
-			<div class="px-3 px-sm-2 px-lg-5" data-animate="fadeInUp">
-				<a class="shadow-6 shadow-hover-7 radius-5 overflow-hidden d-block hover-top"
-				   href="{{ '/contact-us-02.html' | document_url }}">
-					<img class="w-100" src="{{ '/images/landing-image-118.jpg' | document_url }}" alt="contact-us-02">
-				</a>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="pt-lg-14 pt-10 pb-lg-9 pb-5">
-	<div class="container container-xl">
-		<h2 class="fs-48 lh-116 mb-4 text-center" data-animate="fadeInUp">Modern Development Toolset</h2>
-		<p class="fs-18 mx-auto text-center mb-6" style="max-width: 760px" data-animate="fadeInUp">Faster mobile development at lower costs for
-			our users, improving the online browsing experience, and
-			facilitate improved SEO, lower bounce rates, and lower maintenance needs.
-		</p>
-		<div class="row">
-			<div class="col-xl-4 col-md-6">
-				<div class="media p-6 pr-lg-8 shadow-hover-5 bg-hover-white" data-animate="fadeInUp">
-					<img class="mr-6" src="{{ '/images/landing-image-104.png' | document_url }}" alt="Ruby">
-					<div class="media-body pt-3">
-						<h5 class="fs-24 mb-4">Ruby</h5>
-						<p class="fs-18">Provides an elegant syntax that is natural to read and easy to write.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-md-6">
-				<div class="media p-6 pr-lg-8 shadow-hover-5 bg-hover-white" data-animate="fadeInUp">
-					<img class="mr-6" src="{{ '/images/landing-image-105.png' | document_url }}"
-					     alt="Responsive Design">
-					<div class="media-body pt-3">
-						<h5 class="fs-24 mb-4">Responsive Design</h5>
-						<p class="fs-18">Remain consistent in design & brand and attract a wider audience for your
-							store</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-md-6">
-				<div class="media p-6 pr-lg-7 shadow-hover-5 bg-hover-white" data-animate="fadeInUp">
-					<img class="mr-6" src="{{ '/images/landing-image-109.png' | document_url }}" alt="Node.jr">
-					<div class="media-body pt-3">
-						<h5 class="fs-24 mb-4">Node.jr</h5>
-						<p class="fs-18">The largest ecosystem of open source libraries in the world​​ that allows you
-							to work more ​​efficient
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-md-6">
-				<div class="media p-6 pr-lg-7 shadow-hover-5 bg-hover-white" data-animate="fadeInUp">
-					<img class="mr-6" src="{{ '/images/landing-image-106.png' | document_url }}"
-					     alt="Flexible Customization">
-					<div class="media-body">
-						<h5 class="fs-24 mb-4">Flexible Customization</h5>
-						<p class="fs-18">Easily edit/customize to make Glowing fit your branding
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-md-6">
-				<div class="media p-6 pr-lg-7 shadow-hover-5 bg-hover-white" data-animate="fadeInUp">
-					<img class="mr-6" src="{{ '/images/landing-image-107.png' | document_url }}"
-					     alt="Flexible Customization">
-					<div class="media-body">
-						<h5 class="fs-24 mb-4">Gulp</h5>
-						<p class="fs-18">Huge speed advantage over any other task runner and it easy to code &
-							understand
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-md-6">
-				<div class="media p-6 pr-lg-7 shadow-hover-5 bg-hover-white" data-animate="fadeInUp">
-					<img class="mr-6" src="{{ '/images/landing-image-108.png' | document_url }}"
-					     alt="Flexible Customization">
-					<div class="media-body">
-						<h5 class="fs-24 mb-4">Jekyll</h5>
-						<p class="fs-18">Allow users to tweak the site’s look and feel, URLs, the data displayed on the
-							page, and more.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="bg-primary pt-7 pb-10 pb-lg-4">
-	<div class="container container-xl">
-		<div class="row align-items-center">
-			<div class="col-lg-8 mb-3 mb-lg-0">
-				<img src="{{ '/images/landing-image-102.png' | document_url }}"
-				     alt="Glowing Elements" data-animate="fadeInUp">
-			</div>
-			<div class="col-lg-4 pl-xl-9">
-				<div class="card bg-transparent border-0">
-					<div class="card-body p-0 text-center text-lg-left">
-						<h2 class="card-title fs-48 lh-116 text-white mb-4 mb-lg-6" data-animate="fadeInUp">Glowing<br> Elements</h2>
-						<p class="card-text text-white fs-18 opacity-7 mx-auto mx-lg-0" style="max-width: 340px" data-animate="fadeInUp">
-							Pre-designed elements
-							with specifically useful function facilitate the success of your online store.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="pt-10 pt-lg-13 pb-lg-15 pb-11">
-	<div class="container container-xl" style="max-width: 1290px">
-		<h2 class="text-center fs-48 lh-116 mb-4" data-animate="fadeInUp">Dedicated Support Center </h2>
-		<p class="text-center fs-18 mb-8" data-animate="fadeInUp">Have a problem? Let us help you!</p>
-		<div class="row">
-			<div class="col-md-6 mb-6 mb-md-0">
-				<div class="card rounded border-0 shadow-3 pr-lg-7 pl-lg-8 px-6" data-animate="fadeInUp">
-					<div class="row no-gutters align-items-center mh-300">
-						<div class="col-sm-6 order-sm-2">
-							<img src="{{ '/images/landing-image-100.png' | document_url }}"
-							     alt="Dedicated Support">
-						</div>
-						<div class="col-sm-6">
-							<div class="card-body p-0 pb-sm-0 pb-6">
-								<h5 class="card-title fs-28 lh-14 text-primary"><span class="underline-primary">Dedicated</span>
-									<br> <span class="underline-primary">Support</span></h5>
-								<p class="card-text fs-18">Ready to help and solve your problems at any time</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="card rounded border-0 shadow-3 pr-lg-7 pl-lg-8 px-6" data-animate="fadeInUp">
-					<div class="row no-gutters align-items-center mh-300">
-						<div class="col-sm-6 order-sm-2">
-							<img src="{{ '/images/landing-image-101.png' | document_url }}"
-							     alt="Extensive Documentaion">
-						</div>
-						<div class="col-sm-6">
-							<div class="card-body p-0 pb-sm-0 pb-6">
-								<h5 class="card-title fs-28 lh-14 text-primary"><span class="underline-primary">Extensive</span>
-									<br> <span class="underline-primary">Documentaion</span></h5>
-								<p class="card-text fs-18">Detailed instructions from installing to updating</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</section>
-<section class="bg-img-cover-center position-relative landing-banner parralax-images overflow-hidden"
-         style="background-image: url('{{ '/images/bg-slider-landing-01.png' | document_url }}')">
-	<div class="container container-3xl py-13 py-xxl-18 position-relative">
-		<div class="pb-xxl-15 z-index-10 text-center">
-			<img src="{{ '/images/landing-image-103.png' | document_url }}" class="mb-6" data-animate="fadeInUp"
-			     alt="Banner Landing 02">
-			<h2 class="fs-34 fs-md-48 mx-auto mb-4 lh-116" data-animate="fadeInUp" style="max-width:583px">Building Your
-				Dream
-				Cosmetics Store</h2>
-			<p class="fs-56 mb-2 text-primary font-weight-normal custom-font" data-animate="fadeInUp">with Glowing</p>
-		</div>
-		<div class="layer z-index-1 position-absolute d-none d-xxl-block" style="left:-272px; top:180px;">
-			<img class="rotate-n10" src="{{ '/images/landing-image-97.jpg' | document_url }}"
-			     alt="Banner Landing 01">
-		</div>
-		<div class="layer position-absolute z-index-2 d-none d-xxl-block" style="left:277px; top: 180px">
-			<img src="{{ '/images/landing-99.png' | document_url }}" alt="Banner Landing 02">
-		</div>
-		<div class="layer position-absolute z-index-2 d-none d-xxl-block" style="left:calc(50% - 324px); bottom: -185px">
-			<img class="rotate-n10" src="{{ '/images/landing-image-94.jpg' | document_url }}" alt="Banner Landing 02">
-		</div>
-		<div class="layer position-absolute z-index-2 d-none d-xxl-block" style="right:-160px; bottom:calc(50% - 260px)">
-			<img class="rotate-n10" src="{{ '/images/landing-image-96.jpg' | document_url }}" alt="Banner Landing 02">
-		</div>
-		<div class="layer position-absolute z-index-2 d-none d-xxl-block" style="right:388px; top:-138px;">
-			<img class="rotate-n10 overflow-hidden" style="border-radius: 10px"
-			     src="{{ '/images/landing-image-95.jpg' | document_url }}" alt="Banner Landing 02">
-		</div>
-	</div>
+<section class="pt-10 pt-lg-12 pb-lg-13 pb-11">
+    <div class="container text-center mt-lg-1">
+        <div class="row">
+            <div class="col-lg-6" data-animate="fadeInUp">
+                <h3 class="mb-2 mx-auto fs-24 lh-15 mb-3">Follow Us on</h3>
+                <p class="mx-auto mb-6" style="max-width: 450px"> Shapes and proportions are for your intellect. I’ve treated the waistcoat as if it were a corset.</p>
+                <ul class="list-inline fs-20 mb-0">
+                    <li class="list-inline-item mr-4 mr-lg-8">
+                        <a href="#" class="hover-violet"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                    <li class="list-inline-item mr-4 mr-lg-8">
+                        <a href="#" class="hover-violet"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item mr-4 mr-lg-8">
+                        <a href="#" class="hover-violet"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="hover-violet"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 border-lg-left mt-7 mt-lg-0" data-animate="fadeInUp">
+                <h3 class="mb-2 mx-auto fs-24 lh-15 mb-3">Let’s Stay in Touch</h3>
+                <p class="mx-auto mb-7">We’ll shout you $10 off your first order.</p>
+                <form class="mx-auto" style="max-width: 470px">
+                    <div class="input-group position-relative">
+                        <input type="email" class="form-control bg-transparent border-radius-right-0"
+                               placeholder="Enter your email address">
+                        <button type="submit" class="btn btn-secondary bg-hover-violet border-hover-violet border-radius-left-0">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>

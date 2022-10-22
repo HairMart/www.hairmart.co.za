@@ -60,7 +60,7 @@ shops:
     url: /shop-page-01.html
   - image: /images/shop-landing-02.jpg
     title: Shop Layout 02
-    url: /shop-page-02.html
+    url: /shop.html
   - image: /images/shop-landing-03.jpg
     title: Shop Layout 03
     url: /shop-page-03.html
