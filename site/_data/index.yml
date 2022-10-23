@@ -1,0 +1,111 @@
+demos:
+  - image: /images/landing-home-01.png
+    title: Home 01
+    url: /home-01.html
+  - image: /images/landing-home-02.png
+    title: Home 02
+    url: /home-02.html
+  - image: /images/landing-home-03.png
+    title: Home 03
+    url: /home-03.html
+  - image: /images/landing-home-04.png
+    title: Home 04
+    url: /home-04.html
+  - image: /images/landing-home-05.png
+    title: Home 05
+    url: /home-05.html
+  - image: /images/landing-home-06.png
+    title: Home 06
+    url: /home-06.html
+  - image: /images/landing-home-07.png
+    title: Home 07
+    url: /home-07.html
+  - image: /images/landing-home-08.png
+    title: Home 08
+    url: /home-08.html
+  - image: /images/landing-home-09.png
+    title: Home 09
+    url: /home-09.html
+  - image: /images/landing-home-10.png
+    title: Home 10
+    url: /home-10.html
+  - image: /images/landing-home-11.jpg
+    title: Home 11
+    url: /home-11.html
+  - image: /images/landing-home-12.jpg
+    title: Home 12
+    url: /home-12.html
+  - image: /images/landing-home-13.jpg
+    title: Home 13
+    url: /home-13.html
+  - image: /images/landing-home-14.jpg
+    title: Home 14
+    url: /home-14.html
+  - image: /images/landing-home-15.jpg
+    title: Home 15
+    url: /home-15.html
+  - image: /images/landing-home-16.jpg
+    title: Home 16
+    url: /home-16.html
+  - image: /images/landing-home-17.jpg
+    title: Home 17
+    url: /home-17.html
+  - image: /images/landing-home-18.jpg
+    title: Home 18
+    url: /home-18.html
+
+shops:
+  - image: /images/shop-landing-01.jpg
+    title: Shop Layout 01
+    url: /shop-page-01.html
+  - image: /images/shop-landing-02.jpg
+    title: Shop Layout 02
+    url: /shop.html
+  - image: /images/shop-landing-03.jpg
+    title: Shop Layout 03
+    url: /shop-page-03.html
+  - image: /images/shop-landing-04.jpg
+    title: Shop Layout 04
+    url: /shop-page-04.html
+  - image: /images/shop-landing-05.jpg
+    title: Shop Layout 05
+    url: /shop-page-05.html
+
+features:
+  - image: /images/image-landing-34.png
+    title: Countdown Timer
+  - image: /images/image-landing-33.png
+    title: Video Thumbnail
+  - image: /images/image-landing-32.png
+    title: Product Variable Swatches
+  - image: /images/image-landing-31.png
+    title: Product Compare
+  - image: /images/image-landing-30.png
+    title: Product Types
+  - image: /images/image-landing-35.png
+    title: Quick View Popup
+
+blogs:
+  - image: /images/blog-landing-02.jpg
+    title: Blog Grid
+    url: /blog-grid.html
+  - image: /images/blog-landing-01.jpg
+    title: Blog Grid Sidebar
+    url: /blog-grid-sidebar.html
+  - image: /images/blog-landing-03.jpg
+    title: Blog Masonry
+    url: /blog-masonry.html
+  - image: /images/blog-landing-04.jpg
+    title: Blog List
+    url: /blog-list.html
+  - image: /images/blog-landing-05.jpg
+    title: Blog Classic
+    url: /blog-classic.html
+
+posts:
+  - image: /images/post-landing-01.jpg
+    title: Blog detail 01
+    url: /blog-detail-01
+  - image: /images/post-landing-02.jpg
+    title: Blog detail 02
+    url: /blog-detail-02

@@ -1,0 +1,26 @@
+- title: Blog
+  url: /#
+  submenu:
+    - title: Blog Listing
+      url: /#
+      submenu:
+        - title: Blog Grid
+          url: /blog-grid.html
+        - title: Blog Grid Sidebar
+          url: /blog-grid-sidebar.html
+        - title: Blog Masonsy
+          url: /blog-masonry.html
+        - title: Blog List
+          url: /blog-list.html
+        - title: Blog Classic
+          url: /blog-classic.html
+    - title: Blog Detail
+      url: /#
+      submenu:
+        - title: Blog Detail 01
+          url: /blog-detail-01.html
+        - title: Blog Detail 02
+          url: /blog-detail-02.html
+- title: Docs
+  url: /#
+  submenu: menu/menu-docs.html

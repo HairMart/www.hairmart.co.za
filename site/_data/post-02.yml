@@ -1,0 +1,33 @@
+products:
+  - image: /images/product-03.jpg
+    title: Facial cleanser
+    price: $29.00
+    sale: $39.00
+    label: none
+    reviews: 2947
+    url: /product-page-01.html
+  - image: /images/product-04.jpg
+    title: Bio-shroom Rejuvenating Serum
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-page-01.html
+  - image: /images/product-09.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: new
+    reviews: 2947
+    url: /product-page-01.html
+  - image: /images/product-08.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-page-01.html
+  - image: /images/product-05.jpg
+    title: Facial cleanser
+    price: $29.00
+    label: new
+    reviews: 2947
+    url: /product-page-01.html

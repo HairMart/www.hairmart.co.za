@@ -1,0 +1,38 @@
+products:
+  - image: /images/product-10.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    description: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+    url: /product-page-01.html
+  - image: /images/product-01.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    description: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+    url: /product-page-01.html
+  - image: /images/product-04.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    description: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+    url: /product-page-01.html
+  - image: /images/product-13.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    description: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+    url: /product-page-01.html
+  - image: /images/product-07.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: sale
+    reviews: 2947
+    description: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+    url: /product-page-01.html

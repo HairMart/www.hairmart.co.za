@@ -1,0 +1,27 @@
+---
+layout: slider-docs
+title: "About Us 01"
+category_text: About Us
+category_url: /docs/templates/about-us.html
+---
+{% include components/page-title/docs.html %}
+<section class="pt-lg-18 pb-lg-17 py-14 bg-img-cover-center" style="background-image: url('{{ '/images/bg-about-01.jpg' | document_url }}');">
+    <div class="container pt-lg-8 pb-lg-7">
+        <p class="text-secondary mb-5 text-uppercase font-weight-600 letter-spacing-015">Introducing</p>
+        <h1 class="fs-44 fs-lg-56 lh-121">About Glowing</h1>
+    </div>
+</section>
+<section class="py-10">
+    <div class="container">
+        <div class="bg-gray-01 overflow-auto">
+            {% highlight html %}
+            <section class="pt-lg-18 pb-lg-17 py-14 bg-img-cover-center" style="background-image: url('{{ '/images/bg-about-01.jpg' | document_url }}');">
+                <div class="container pt-lg-8 pb-lg-7">
+                    <p class="text-secondary mb-5 text-uppercase font-weight-600 letter-spacing-015">Introducing</p>
+                    <h1 class="fs-44 fs-lg-56 lh-121">About Glowing</h1>
+                </div>
+            </section>
+            {% endhighlight %}
+        </div>
+    </div>
+</section>

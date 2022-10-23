@@ -1,0 +1,53 @@
+products:
+  - image: /images/product-05.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-02.jpg
+    title: Bio-shroom Rejuvenating Serum
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-03.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-07.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    sale: $39.00
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-09.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-11.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-08.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    reviews: 2947
+    url: /product-detail-01.html
+
+  - image: /images/product-10.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html

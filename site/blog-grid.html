@@ -1,0 +1,77 @@
+---
+layout: default
+title: "Blog Grid"
+category_text: "Blog"
+category_url: /blog-grid.html
+---
+<section class="py-2 bg-gray-2">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-site py-0 d-flex justify-content-center">
+                <li class="breadcrumb-item"><a class="text-decoration-none text-body" href="{{ '/index.html' | document_url }}">Home</a>
+                </li>
+                <li class="breadcrumb-item active pl-0 d-flex align-items-center" aria-current="page">Blog Update</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<section class="pt-9 pb-lg-13 pb-11">
+    <div class="container">
+        <h2 class="text-center mb-8" data-animate="fadeInUp">Blog Update</h2>
+        <div class="row">
+            {% for post in site.data.blog-grid.post %}
+            <div class="col-lg-4 col-md-6 mb-7" data-animate="fadeInUp">
+                <div class="card border-0 text-center">
+                    <div class="position-relative d-flex align-items-end card-img">
+                        <a href="{{ post.url | document_url }}" class="hover-shine">
+                            <img src="{{ post.image | document_url }}"
+                                 alt="{{ post.title }}">
+                        </a>
+                        <a href="#"
+                           class="badge pos-fixed-bottom-n12-center text-secondary bg-gray bg-hover-secondary hover-white position-absolute fs-15 py-1 px-3 font-weight-500">
+                            {{ post.cat }}
+                        </a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title mb-0 mt-6 fs-24 lh-15 mx-xl-3">
+                            <a href="{{ post.url | document_url }}" class="text-decoration-none">A
+                                {{ post.title }}</a>
+                        </h3>
+                        <ul class="list-inline mt-5 fs-15 lh-1">
+                            <li class="list-inline-item pr-3 border-right border-2x">By <a class="text-decoration-none"
+                                                                                           href="#">{{ post.author }}</a>
+                            </li>
+                            <li class="list-inline-item pr-3">{{ post.date }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <nav class="pt-2">
+            <ul class="pagination justify-content-center align-items-center mb-0 fs-16 font-weight-600">
+                <li class="page-item fs-18 d-none d-sm-block">
+                    <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#" tabindex="-1"><i class="far fa-angle-double-left"></i></a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#">1</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#">...</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#">6</a>
+                </li>
+                <li class="page-item fs-18 d-none d-sm-block">
+                    <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#"><i class="far fa-angle-double-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>

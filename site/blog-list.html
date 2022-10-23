@@ -1,0 +1,94 @@
+---
+layout: default
+title: "Blog List"
+category_text: "Blog"
+category_url: /blog-list.html
+---
+<section class="py-2 bg-gray-2">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-site py-0 d-flex justify-content-center">
+                <li class="breadcrumb-item"><a class="text-decoration-none text-body" href="{{ '/index.html' | document_url }}">Home</a>
+                </li>
+                <li class="breadcrumb-item active pl-0 d-flex align-items-center" aria-current="page">Blog Update</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<section class="pt-10 pb-lg-13 pb-11">
+    <div class="container">
+        <h2 class="text-center mb-8" data-animate="fadeInUp">Blog Update</h2>
+        <div class="row">
+            <div class="col-lg-4 primary-sidebar sidebar-sticky pr-lg-8 order-lg-1 order-2" id="sidebar">
+                {% include sidebar-blog.html %}
+            </div>
+            <div class="col-lg-8 mb-11 mb-lg-0 order-lg-1">
+                {% for blog in site.data.blog-list.blogs %}
+                <div class="card border-0 mb-7" data-animate="fadeInUp">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-md-6 pr-md-6">
+                            <a href="{{ blog.url | document_url }}"
+                               class="hover-shine d-block">
+                                <img src="{{ blog.image | document_url  }}"
+                                     alt="{{blog.title}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body px-0 py-lg-0">
+                                <ul class="list-inline fs-13 text-uppercase letter-spacing-01 lh-1 font-weight-600">
+                                    <li class="list-inline-item pr-3 border-right border-2x"> {{blog.cate}}</li>
+                                    <li class="list-inline-item pr-3">{{blog.time}}</li>
+                                </ul>
+                                <h3 class="card-title mb-2 fs-20">
+                                    <a href="{{ blog.url | document_url }}">{{blog.title}}</a>
+                                </h3>
+                                <p class="card-text mb-4">{{blog.desc}} </p>
+                                <a href="{{ blog.url | document_url }}"
+                                   class="fs-16 font-weight-600 border-bottom d-inline-block border-hover-primary text-decoration-none">
+                                    Read More
+                                    <svg class="icon icon-arrow-right">
+                                        <use xlink:href="#icon-arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                {% endfor %}
+                <nav class="pt-4 pt-lg-5">
+                    <ul class="pagination justify-content-center align-items-center mb-0 fs-16 font-weight-600">
+                        <li class="page-item fs-18 d-none d-sm-block">
+                            <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex"
+                               href="#" tabindex="-1"><i class="far fa-angle-double-left"></i></a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex"
+                               href="#">1</a>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex"
+                               href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex"
+                               href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex"
+                               href="#">...</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex"
+                               href="#">6</a>
+                        </li>
+                        <li class="page-item fs-18 d-none d-sm-block">
+                            <a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex"
+                               href="#"><i class="far fa-angle-double-right"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,289 @@
+tabs-id:
+  - name: Skincare
+    is_active: true
+  - name: Bodycare
+  - name: Haircare
+  - name: Accessories
+
+
+tabs:
+  - title: Skincare
+    is_active: true
+    products:
+      - image: /images/product-07.jpg
+        title: Facial cleanser
+        price: $29.00
+        label: sale
+        sale: $39.00
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-02.jpg
+        title: Bio-shroom Rejuvenating Serum
+        price: $29.00
+        label: none
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-03.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        reviews: 2947
+        label: new
+        url: /product-detail-01.html
+
+      - image: /images/product-05.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-08.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: sale
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-06.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-03.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: New
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-01.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: sale
+        reviews: 2947
+        url: /product-detail-01.html
+
+
+  - title: Bodycare
+    products:
+      - image: /images/product-03.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        sale: $39.00
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-04.jpg
+        title: Bio-shroom Rejuvenating Serum
+        price: $29.00
+        label: none
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-05.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-06.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: sale
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-07.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: New
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-08.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: New
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-09.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: none
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-10.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: none
+        reviews: 2947
+        url: /product-detail-01.html
+
+  - title: Haircare
+    products:
+    - image: /images/product-11.jpg
+      title: Coffee Bean Caffeine Eye Cream
+      price: $29.00
+      sale: $39.00
+      reviews: 2947
+      url: /product-detail-01.html
+
+    - image: /images/product-10.jpg
+      title: Bio-shroom Rejuvenating Serum
+      price: $29.00
+      label: none
+      reviews: 2947
+      url: /product-detail-01.html
+
+    - image: /images/product-09.jpg
+      title: Coffee Bean Caffeine Eye Cream
+      price: $29.00
+      reviews: 2947
+      url: /product-detail-01.html
+
+    - image: /images/product-08.jpg
+      title: Coffee Bean Caffeine Eye Cream
+      price: $29.00
+      label: sale
+      reviews: 2947
+      url: /product-detail-01.html
+
+    - image: /images/product-07.jpg
+      title: Coffee Bean Caffeine Eye Cream
+      price: $29.00
+      label: New
+      reviews: 2947
+      url: /product-detail-01.html
+
+    - image: /images/product-06.jpg
+      title: Coffee Bean Caffeine Eye Cream
+      price: $29.00
+      label: New
+      reviews: 2947
+      url: /product-detail-01.html
+
+    - image: /images/product-05.jpg
+      title: Coffee Bean Caffeine Eye Cream
+      price: $29.00
+      label: none
+      reviews: 2947
+      url: /product-detail-01.html
+
+    - image: /images/product-04.jpg
+      title: Coffee Bean Caffeine Eye Cream
+      price: $29.00
+      label: none
+      reviews: 2947
+      url: /product-detail-01.html
+
+  - title: Accessories
+    products:
+      - image: /images/product-03.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        sale: $39.00
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-04.jpg
+        title: Bio-shroom Rejuvenating Serum
+        price: $29.00
+        label: none
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-05.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-06.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: sale
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-07.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: New
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-08.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: New
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-09.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: none
+        reviews: 2947
+        url: /product-detail-01.html
+
+      - image: /images/product-10.jpg
+        title: Coffee Bean Caffeine Eye Cream
+        price: $29.00
+        label: none
+        reviews: 2947
+        url: /product-detail-01.html
+
+image-box:
+  - image: /images/image-box-16.jpg
+    title: Guaranteed PURE
+    description: All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+
+  - image: /images/image-box-15.jpg
+    title: Completely Cruelty-Free
+    description: All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+
+  - image: /images/image-box-17.jpg
+    title: Ingredient Sourcing
+    description: All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+
+testimonial:
+  - image: /images/testimonials-06.png
+    name: Jennifer C.
+    description:  “ Great tags, Millie has got used to it, nothing like the old tin tags of years gone by. Light weight and great colours available.”
+    postion: / Orlando, FL
+
+  - image: /images/testimonials-05.png
+    name: Jennifer C.
+    description:  “ Amazing product. The results are so transformative in texture and my face feels plump and healthy. Highly recommend! “
+    postion: / Orlando, FL
+
+  - image: /images/testimonials-04.png
+    name: Jennifer C.
+    description:  “ Amazing product. The results are so transformative in texture and my face feels plump and healthy. Highly recommend! “
+    postion: / Orlando, FL
+
+  - image: /images/testimonials-06.png
+    name: Jennifer C.
+    description:  “ Great tags, Millie has got used to it, nothing like the old tin tags of years gone by. Light weight and great colours available.”
+    postion: / Orlando, FL
+
+
+image-box-02:
+  - image: /images/image-box-21.jpg
+    title: Find a Store
+    btn: Our Store
+    url: /shop-page-01.html
+
+  - image: /images/image-box-13.jpg
+    title: From Our Blog
+    btn: Read More
+    url: /blog-grid.html
+
+  - image: /images/image-box-14.jpg
+    title: Our Story
+    btn: View More
+    url: /about-us-01.html

@@ -1,0 +1,52 @@
+---
+layout: docs
+title: Product Categories
+description: Show categories on products
+group: templates
+toc: true
+---
+<h2>Product Categories 01</h2>
+
+{% capture example %}
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card border-0">
+            <a href="#" class="hover-zoom-in hover-shine"><img src="{{ '/images/categories-01.jpg' | document_url }}"
+                                                               alt="categories 01"></a>
+            <div class="card-body text-center">
+                <h4 class="card-title mb-1"><a href="#">Bodycare</a></h4>
+                <p class="card-text">23 items</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+
+<h2>Product Categories 02</h2>
+
+{% capture example %}
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card border-0 banner banner-02 hover-zoom-in hover-shine">
+            <div class="card-img bg-img-cover-center"
+                 style="background-image: url('{{ '/images/banner-52.jpg' | document_url }}');"></div>
+            <div class="card-img-overlay d-inline-flex flex-column px-3 py-6 bg-overlay-01 align-items-center justify-content-end">
+                <h3 class="card-title fs-34 font-weight-400 custom-font-02 text-white mb-0 lh-116">Hand Cream</h3>
+                <div>
+                    <a href="#"
+                       class="btn btn-link btn-light bg-transparent text-white hover-white border-0 border-bottom rounded-0 p-0 fs-16 font-weight-600">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}

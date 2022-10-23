@@ -1,0 +1,22 @@
+products:
+  - image: /images/product-07.jpg
+    title: Natural Coconut Cleansing Oil
+    price: $29.00
+    sale: $39.00
+    time: August 14, 2021
+    stock: In stock
+    button: Add To Cart
+  - image: /images/product-05.jpg
+    title: Cleansing Balm
+    price: $29.00
+    sale: $39.00
+    time: August 14, 2021
+    stock: In stock
+    button: Select Options
+  - image: /images/product-10.jpg
+    title: Super Pure
+    price: $29.00
+    sale: $39.00
+    time: August 14, 2021
+    stock: In stock
+    button: Add To Cart

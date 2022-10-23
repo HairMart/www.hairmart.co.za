@@ -1,0 +1,51 @@
+a {
+	transition: all 0.2s;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+.gtf-back-to-top {
+	opacity: 0;
+	transition: opacity 0.5s;
+
+	&.in {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	.custom-col-stretched-right {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		width: 50vw !important;
+		right: 50%;
+		margin-right: -50vw;
+		max-width: none;
+	}
+}
+
+@media (min-width: 1025px) {
+	.custom-col-stretched-right {
+		width: 60vw !important;
+		right: 60%;
+		margin-right: -60vw;
+	}
+}
+
+.badge {
+
+}
+

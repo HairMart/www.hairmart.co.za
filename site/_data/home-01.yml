@@ -1,0 +1,115 @@
+products:
+  - image: /images/product-01.jpg
+    title: Facial cleanser
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-02.jpg
+    title: Bio-shroom Rejuvenating Serum
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-03.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: new
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-04.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-05.jpg
+    title: Facial cleanser
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+
+info_boxs:
+  - svg: icon-box-01
+    title: Free Shipping
+    description: Free Shipping for orders over $130
+  - svg: icon-box-02
+    title: Returns
+    description: Within 30 days for an exchange.
+  - svg: icon-box-03
+    title: Online Support
+    description: 24 hours a day, 7 days a week
+  - svg: icon-box-04
+    title: Flexible Payment
+    description: Pay with Multiple Credit Cards
+
+testimonials:
+  - image: /images/testimonial-03.png
+    alt: testimonial 03
+    description: “Also the customer service is phenomenal. I would purchase again.“
+  - image: /images/testimonial-02.png
+    alt: testimonial 02
+    description: “Great product line. Very attentive staff to deal with.“
+  - image: /images/testimonial-01.png
+    alt: testimonial 01
+    description: “Looking to affordably upgrade your everyday dinnerware? Look no further than e.Space“
+
+feature-products:
+  - image: /images/product-01.jpg
+    title: Facial cleanser
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-02.jpg
+    title: Bio-shroom Rejuvenating Serum
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-06.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-03.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: none
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-07.jpg
+    title: Facial cleanser
+    price: $29.00
+    sale: $39.00
+    label: sale
+    reviews: 2947
+    url: /product-detail-01.html
+  - image: /images/product-08.jpg
+    title: Coffee Bean Caffeine Eye Cream
+    price: $29.00
+    label: New
+    reviews: 2947
+    url: /product-detail-01.html
+
+instagrams:
+  - image: /images/instagram-01.jpg
+    alt: Instagram 01
+    url: /#
+  - image: /images/instagram-02.jpg
+    alt: Instagram 02
+    url: /#
+  - image: /images/instagram-03.jpg
+    alt: Instagram 03
+    url: /#
+  - image: /images/instagram-04.jpg
+    alt: Instagram 04
+    url: /#
+  - image: /images/instagram-05.jpg
+    alt: Instagram 05
+    url: /#
