@@ -5,7 +5,7 @@ social_image_path:  /images/logo_01.png
 social_logo_path:   /images/logo_01.png
 
 # Server
-destination:    ./../dist
+destination:    ./../docs
 host:           "localhost"
 port:           4000
 url:            ""
